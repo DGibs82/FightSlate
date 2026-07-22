@@ -1,0 +1,24 @@
+{
+  "name": "fightslate-live",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
+    "db:push": "prisma db push",
+    "seed": "node scripts/seed.mjs",
+    "notify:new": "node jobs/send-new-fights.mjs",
+    "notify:upcoming": "node jobs/send-upcoming.mjs"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.12.0",
+    "prisma": "^6.12.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

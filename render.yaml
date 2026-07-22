@@ -1,0 +1,74 @@
+databases:
+  - name: fightslate-postgres
+    plan: basic-256mb
+    databaseName: fightslate
+    user: fightslate
+
+services:
+  - type: web
+    name: fightslate-web
+    runtime: node
+    plan: starter
+    buildCommand: npm install && npm run db:generate
+    preDeployCommand: npm run db:migrate && npm run seed
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: fightslate-postgres
+          property: connectionString
+      - key: ADMIN_TOKEN
+        generateValue: true
+      - key: TOKEN_SECRET
+        generateValue: true
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+      - key: EMAIL_REPLY_TO
+        sync: false
+
+  - type: cron
+    name: fightslate-new-fight-alerts
+    runtime: node
+    plan: starter
+    schedule: "5,35 * * * *"
+    buildCommand: npm install && npm run db:generate
+    startCommand: npm run notify:new
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: fightslate-postgres
+          property: connectionString
+      - key: TOKEN_SECRET
+        generateValue: true
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+      - key: EMAIL_REPLY_TO
+        sync: false
+
+  - type: cron
+    name: fightslate-upcoming-reminders
+    runtime: node
+    plan: starter
+    schedule: "0 * * * *"
+    buildCommand: npm install && npm run db:generate
+    startCommand: npm run notify:upcoming
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: fightslate-postgres
+          property: connectionString
+      - key: TOKEN_SECRET
+        generateValue: true
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+      - key: EMAIL_REPLY_TO
+        sync: false

@@ -1,0 +1,69 @@
+generator client { provider = "prisma-client-js" }
+datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+
+model Event {
+  id String @id
+  sport String
+  promotion String
+  title String
+  headline String
+  date DateTime @db.Date
+  start DateTime?
+  timeNote String
+  venue String
+  location String
+  network String
+  status String
+  images Json
+  sources Json
+  fights Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deliveries Delivery[]
+  @@index([date, sport, status])
+}
+
+model DevelopingMatchup {
+  id String @id
+  title String
+  status String
+  confidence Int
+  target String
+  weight String
+  summary String
+  sources Json
+  updatedAt DateTime @updatedAt
+}
+
+model Subscriber {
+  id String @id @default(uuid())
+  email String @unique
+  status String @default("PENDING")
+  boxing Boolean @default(true)
+  mma Boolean @default(true)
+  newFightAlerts Boolean @default(true)
+  upcomingAlerts Boolean @default(true)
+  reminderHours Int @default(24)
+  confirmTokenHash String?
+  unsubscribeTokenHash String?
+  confirmedAt DateTime?
+  unsubscribedAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deliveries Delivery[]
+}
+
+model Delivery {
+  id String @id @default(uuid())
+  subscriberId String
+  eventId String?
+  type String
+  dedupeKey String @unique
+  providerId String?
+  status String
+  error String?
+  createdAt DateTime @default(now())
+  subscriber Subscriber @relation(fields:[subscriberId], references:[id], onDelete: Cascade)
+  event Event? @relation(fields:[eventId], references:[id], onDelete: SetNull)
+  @@index([subscriberId, createdAt])
+}

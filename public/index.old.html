@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FightSlate verified boxing and UFC schedule snapshot with fighter photography, full cards, sources, developing fights, and calendar downloads.">
+<title>FightSlate | Verified Fight Calendar</title>
+<style>
+:root{
+  --bg:#07090d;--panel:#10151e;--panel2:#151c28;--line:rgba(255,255,255,.11);
+  --text:#f7f8fb;--muted:#9ba6b6;--orange:#ff5b35;--gold:#ffc45f;--blue:#5aa8ff;
+  --green:#43d69a;--red:#ff6b6b;--shadow:0 24px 80px rgba(0,0,0,.4)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:
+radial-gradient(circle at 8% -5%,rgba(255,91,53,.20),transparent 35rem),
+radial-gradient(circle at 92% 5%,rgba(90,168,255,.12),transparent 30rem),var(--bg);
+color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,input,select{font:inherit}button{cursor:pointer}a{color:inherit}.shell{width:min(1240px,calc(100% - 30px));margin:auto}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(7,9,13,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:950;letter-spacing:-.04em}.mark{display:grid;place-items:center;width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--orange),#ff9b45);box-shadow:0 10px 30px rgba(255,91,53,.3)}
+.navlinks{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.navlinks a{padding:9px 11px;text-decoration:none;color:var(--muted);border-radius:10px;font-size:.88rem}.navlinks a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.btn{border:1px solid var(--line);border-radius:12px;padding:12px 15px;color:var(--text);background:rgba(255,255,255,.055);font-weight:800;transition:.18s}.btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.23)}.btn.primary{border:0;background:linear-gradient(135deg,var(--orange),#ff7e3b);box-shadow:0 12px 30px rgba(255,91,53,.24)}
+.hero{padding:74px 0 42px;display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}.kicker{color:var(--gold);font-size:.73rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase;margin-bottom:17px}.hero h1{margin:0;font-size:clamp(3.3rem,7.5vw,7rem);line-height:.88;letter-spacing:-.075em}.hero p{color:var(--muted);line-height:1.68;max-width:690px;font-size:1.08rem;margin:25px 0}.actions{display:flex;gap:10px;flex-wrap:wrap}
+.hero-card{position:relative;min-height:440px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(155deg,rgba(255,255,255,.075),rgba(255,255,255,.018)),var(--panel);overflow:hidden;box-shadow:var(--shadow)}
+.hero-card:before{content:"";position:absolute;inset:auto -80px -100px auto;width:300px;height:300px;background:rgba(255,91,53,.22);filter:blur(25px);border-radius:50%}
+.hero-fighters{height:285px;display:flex;align-items:end;justify-content:center;position:relative;background:radial-gradient(circle at 50% 70%,rgba(255,196,95,.16),transparent 55%)}.hero-fighters img{height:255px;max-width:47%;object-fit:contain;filter:drop-shadow(0 15px 26px rgba(0,0,0,.42))}.hero-fighters img:last-child{transform:scaleX(-1)}.vs{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--orange);font-weight:950;box-shadow:0 14px 34px rgba(255,91,53,.36)}
+.hero-info{position:relative;padding:20px 24px 24px}.eyeline{display:flex;gap:8px;flex-wrap:wrap}.tag{display:inline-flex;align-items:center;padding:5px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.67rem;font-weight:900;letter-spacing:.07em;text-transform:uppercase;background:rgba(255,255,255,.04)}.tag.orange{color:#ffdbd2;background:rgba(255,91,53,.13)}.tag.blue{color:#d2e8ff;background:rgba(90,168,255,.12)}.tag.gold{color:#211b10;background:var(--gold);border-color:transparent}.tag.green{color:#caffea;background:rgba(67,214,154,.12)}
+.hero-title{font-size:1.55rem;font-weight:950;letter-spacing:-.035em;margin:10px 0 5px}.meta{color:var(--muted);font-size:.86rem;line-height:1.55}
+.snapshot{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:15px 17px;margin:0 auto 30px;border-radius:15px;background:rgba(67,214,154,.075);border:1px solid rgba(67,214,154,.2);color:#c9ffe8;font-size:.87rem}.snapshot span:last-child{color:var(--muted);text-align:right}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:60px}.stat{border:1px solid var(--line);background:rgba(255,255,255,.035);padding:19px;border-radius:16px}.stat strong{display:block;font-size:1.45rem}.stat span{color:var(--muted);font-size:.8rem}
+.section{padding:17px 0 52px}.head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:18px}.head h2{font-size:2rem;letter-spacing:-.045em;margin:0}.head p{color:var(--muted);margin:7px 0 0}.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.faceoff{position:relative;min-height:390px;border:1px solid var(--line);border-radius:21px;overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.015)),var(--panel);box-shadow:var(--shadow)}
+.faceoff-images{height:250px;display:flex;justify-content:center;align-items:end;background:radial-gradient(circle at center bottom,rgba(255,91,53,.22),transparent 65%);overflow:hidden}.faceoff.mma .faceoff-images{background:radial-gradient(circle at center bottom,rgba(90,168,255,.22),transparent 65%)}.faceoff-images img{width:50%;height:230px;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 12px 22px rgba(0,0,0,.45))}.faceoff-images img:last-child{transform:scaleX(-1)}.faceoff .vs{top:43%;width:48px;height:48px;font-size:.85rem}.faceoff-copy{padding:18px}.faceoff-copy h3{font-size:1.22rem;letter-spacing:-.03em;margin:8px 0 7px}.faceoff-copy .meta{min-height:43px}.credit{font-size:.68rem;color:#707b8b;margin-top:10px}
+.filters{display:grid;grid-template-columns:1.5fr repeat(3,minmax(130px,.7fr));gap:10px;padding:13px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:16px;margin-bottom:17px}.control{border:1px solid var(--line);border-radius:11px;padding:12px 13px;background:rgba(0,0,0,.23);color:var(--text);outline:none}.control:focus{border-color:var(--orange)}
+.schedule{display:grid;gap:13px}.event{display:grid;grid-template-columns:112px 1fr auto;gap:18px;align-items:center;border:1px solid var(--line);border-radius:18px;padding:18px;background:linear-gradient(150deg,rgba(255,255,255,.05),rgba(255,255,255,.018));transition:.18s}.event:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.2)}.datebox{height:100px;border:1px solid var(--line);border-radius:15px;background:rgba(0,0,0,.22);display:grid;place-items:center;text-align:center}.month{color:var(--orange);text-transform:uppercase;font-size:.7rem;font-weight:950;letter-spacing:.1em}.day{font-size:2rem;font-weight:950;line-height:1}.year{font-size:.7rem;color:var(--muted)}.event h3{font-size:1.27rem;letter-spacing:-.025em;margin:8px 0 4px}.sub{font-weight:750}.event-meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.83rem;margin-top:8px}.source-line{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}.source-line a{font-size:.72rem;color:#bcdcff;text-decoration:none;border-bottom:1px dotted rgba(188,220,255,.5)}.event-actions{display:flex;flex-direction:column;gap:8px;min-width:157px}.event-actions .btn{width:100%}
+.empty{display:none;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:18px;padding:44px}
+.developing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.developing-card{border:1px solid var(--line);border-radius:18px;padding:19px;background:linear-gradient(145deg,rgba(255,196,95,.07),rgba(255,255,255,.018)),var(--panel)}.score{display:flex;align-items:center;justify-content:space-between;margin:14px 0 8px}.scorebar{height:8px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}.scorebar span{display:block;height:100%;background:linear-gradient(90deg,var(--orange),var(--gold));border-radius:999px}.developing-card h3{font-size:1.18rem;margin:9px 0 7px;letter-spacing:-.025em}.developing-card p{color:var(--muted);font-size:.86rem;line-height:1.58}.developing-card a{font-size:.73rem;color:#bddcff}
+.notice{padding:15px 17px;border:1px solid rgba(255,196,95,.22);background:rgba(255,196,95,.07);color:#f6deb1;border-radius:15px;line-height:1.55;margin-bottom:17px;font-size:.86rem}
+.mailing{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:28px;background:radial-gradient(circle at 5% 20%,rgba(255,91,53,.17),transparent 38%),linear-gradient(150deg,rgba(255,255,255,.055),rgba(255,255,255,.018)),var(--panel);box-shadow:var(--shadow)}.mailing h2{font-size:2.3rem;line-height:1;letter-spacing:-.05em;margin:9px 0 13px}.mailing p{color:var(--muted);line-height:1.62}.mail-form{display:grid;gap:12px;padding:18px;border:1px solid var(--line);background:rgba(0,0,0,.2);border-radius:17px}.mail-row{display:grid;grid-template-columns:1fr auto;gap:9px}.mail-options{display:grid;grid-template-columns:1fr 1fr;gap:9px}.check{display:flex;gap:9px;align-items:flex-start;padding:11px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:11px;color:#d7dde6;font-size:.82rem;line-height:1.35}.check input{margin-top:2px}.mail-note{color:#7f8998;font-size:.72rem;line-height:1.45}.mail-status{min-height:20px;font-size:.82rem;color:#caffea}.mail-status.error{color:#ffb2b2}@media(max-width:800px){.mailing{grid-template-columns:1fr}.mail-options{grid-template-columns:1fr}}@media(max-width:520px){.mail-row{grid-template-columns:1fr}}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(9px);display:none;place-items:center;padding:18px;z-index:100}.modal.open{display:grid}.modal-card{width:min(980px,100%);max-height:91vh;overflow:auto;border:1px solid var(--line);border-radius:23px;background:#0c1119;box-shadow:var(--shadow)}.modal-head{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;gap:15px;padding:20px;background:rgba(12,17,25,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.modal-head h2{margin:4px 0;font-size:1.5rem}.close{width:40px;height:40px;border-radius:11px;border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.06);font-size:1.2rem}.modal-body{padding:20px}.cardtable{display:grid;gap:9px}.fight{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:center;border:1px solid var(--line);background:var(--panel);border-radius:13px;padding:13px}.order{font-size:.7rem;color:var(--muted);font-weight:900;text-transform:uppercase;letter-spacing:.07em}.fight strong{font-size:.93rem}.fight span:last-child{color:var(--muted);font-size:.78rem;text-align:right}.modal-sources{margin-top:18px;border-top:1px solid var(--line);padding-top:15px}.modal-sources a{color:#bddcff;font-size:.82rem;margin-right:12px}
+.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);background:white;color:#111722;border-radius:999px;padding:11px 15px;font-weight:850;opacity:0;pointer-events:none;transition:.2s;z-index:150}.toast.show{opacity:1;transform:translate(-50%,0)}
+footer{border-top:1px solid var(--line);padding:30px 0 46px;color:var(--muted);font-size:.78rem;line-height:1.6}.footer-row{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.legal{max-width:800px}
+@media(max-width:980px){.hero{grid-template-columns:1fr}.photo-grid{grid-template-columns:repeat(2,1fr)}.developing-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.event{grid-template-columns:95px 1fr}.event-actions{grid-column:1/-1;flex-direction:row}.filters{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.shell{width:calc(100% - 20px)}.navlinks a{display:none}.hero{padding-top:42px}.hero h1{font-size:3.65rem}.hero-card{min-height:400px}.photo-grid,.stats{grid-template-columns:1fr}.filters{grid-template-columns:1fr}.event{grid-template-columns:1fr}.datebox{height:70px;grid-template-columns:repeat(3,auto);justify-content:start;gap:8px;padding:0 14px}.day{font-size:1.55rem}.event-actions{flex-direction:column}.fight{grid-template-columns:1fr}.fight span:last-child{text-align:left}.snapshot{align-items:flex-start;flex-direction:column}.snapshot span:last-child{text-align:left}.head{align-items:flex-start;flex-direction:column}.faceoff{min-height:370px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="shell nav">
+<a class="brand" href="#"><span class="mark">FS</span><span>FightSlate</span></a>
+<nav class="navlinks">
+<a href="#boxing">Boxing</a><a href="#ufc">UFC</a><a href="#schedule">Full schedule</a><a href="#developing">In the works</a><a href="#alerts">Fight alerts</a>
+<button class="btn" id="downloadAll">Download calendar</button>
+</nav>
+</div></header>
+
+<main>
+<section class="shell hero">
+<div>
+<div class="kicker">Verified combat sports schedule</div>
+<h1>Real fights.<br>One slate.</h1>
+<p>Major boxing and UFC events, verified against official event pages, presented with real fighter photography, published cards, local-time conversion, source links, and downloadable calendar events.</p>
+<div class="actions"><a class="btn primary" href="#schedule" style="text-decoration:none">Browse verified schedule</a><a class="btn" href="#developing" style="text-decoration:none">Track developing fights</a></div>
+</div>
+<aside class="hero-card">
+<div class="hero-fighters">
+<img src="assets/fighters/diego-pacheco.png" alt="Diego Pacheco">
+<div class="vs">VS</div>
+<img src="assets/fighters/immanuwel-aleem.png" alt="Immanuwel Aleem">
+</div>
+<div class="hero-info">
+<div class="eyeline"><span class="tag orange">Boxing</span><span class="tag gold">Today</span><span class="tag">DAZN</span></div>
+<div class="hero-title">Pacheco vs Aleem</div>
+<div class="meta">July 18, 2026 · Dignity Health Sports Park · Carson, California<br>Main broadcast 8:00 PM ET</div>
+</div>
+</aside>
+</section>
+
+<div class="shell snapshot"><span><strong>Verified snapshot:</strong> July 18, 2026. Event changes after this snapshot are not automatically reflected in this static prototype.</span><span>Official promotion pages are prioritized. Secondary sources are labeled.</span></div>
+
+<section class="shell stats">
+<div class="stat"><strong id="eventCount">0</strong><span>Verified or announced events</span></div>
+<div class="stat"><strong id="boutCount">0</strong><span>Published bouts in snapshot</span></div>
+<div class="stat"><strong id="photoCount">0</strong><span>Locally packaged fighter photos</span></div>
+<div class="stat"><strong>2 lanes</strong><span>Confirmed schedule and developing fights</span></div>
+</section>
+
+<section class="shell section" id="boxing">
+<div class="head"><div><h2>Featured boxing</h2><p>Official Matchroom and Queensberry event information with promotion-sourced fighter photography.</p></div></div>
+<div class="photo-grid" id="boxingGrid"></div>
+</section>
+
+<section class="shell section" id="ufc">
+<div class="head"><div><h2>Featured UFC cards</h2><p>Official UFC event verification with locally packaged fighter profile imagery for the prototype.</p></div></div>
+<div class="photo-grid" id="ufcGrid"></div>
+</section>
+
+<section class="shell section" id="schedule">
+<div class="head"><div><h2>Verified fight schedule</h2><p>Confirmed and announced major events, without promotion or broadcaster lock-in.</p></div><button class="btn" id="downloadVisible">Download visible events</button></div>
+<div class="notice"><strong>Coverage boundary:</strong> this is a verified major-event snapshot, not yet every boxing card worldwide. Boxing has no single authoritative global schedule, so exhaustive coverage requires multiple official promotion connectors, commission data, and editorial reconciliation.</div>
+<div class="filters">
+<input class="control" id="search" type="search" placeholder="Search fighter, event, venue, network...">
+<select class="control" id="sport"><option value="All">All sports</option><option value="Boxing">Boxing</option><option value="UFC / MMA">UFC and MMA</option></select>
+<select class="control" id="promotion"><option value="All">All promotions</option></select>
+<select class="control" id="status"><option value="All">All statuses</option><option value="CONFIRMED">Confirmed</option><option value="ANNOUNCED">Announced</option></select>
+</div>
+<div class="schedule" id="eventList"></div><div class="empty" id="empty">No verified events match those filters.</div>
+</section>
+
+<section class="shell section" id="developing">
+<div class="head"><div><h2>Fights in the works</h2><p>Negotiations, mandatory pressure, and storyline clusters that are credible but not booked.</p></div></div>
+<div class="notice">Developing matchups cannot appear in the official calendar. They graduate into the schedule only after a formal announcement or equivalent high-confidence confirmation.</div>
+<div class="developing-grid" id="developingGrid"></div>
+</section>
+<section class="shell section" id="alerts">
+<div class="mailing">
+  <div><div class="kicker">Never miss the bell</div><h2>Get FightSlate alerts</h2><p>Receive an email when a new fight is added and a reminder before the cards you care about begin. Choose boxing, UFC and MMA, or both.</p><div class="mail-note">Double opt-in is required. You can unsubscribe from any email. FightSlate does not sell subscriber data.</div></div>
+  <form class="mail-form" id="mailingForm">
+    <div class="mail-row"><input class="control" id="mailingEmail" type="email" autocomplete="email" required placeholder="you@example.com" aria-label="Email address"><button class="btn primary" type="submit">Join the list</button></div>
+    <div class="mail-options">
+      <label class="check"><input id="mailBoxing" type="checkbox" checked><span><strong>Boxing</strong><br>New cards and reminders</span></label>
+      <label class="check"><input id="mailMma" type="checkbox" checked><span><strong>UFC and MMA</strong><br>New cards and reminders</span></label>
+      <label class="check"><input id="mailNew" type="checkbox" checked><span><strong>New fight alerts</strong><br>When a verified fight is added</span></label>
+      <label class="check"><input id="mailUpcoming" type="checkbox" checked><span><strong>Upcoming reminders</strong><br><select class="control" id="mailReminder" style="margin-top:7px;padding:7px"><option value="6">6 hours before</option><option value="12">12 hours before</option><option value="24" selected>24 hours before</option><option value="48">2 days before</option><option value="72">3 days before</option><option value="168">1 week before</option></select></span></label>
+    </div>
+    <div class="mail-status" id="mailingStatus" role="status"></div>
+    <div class="mail-note">By subscribing, you agree to receive the alert categories selected above. Check your inbox to confirm your address.</div>
+  </form>
+</div>
+</section>
+
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+<div class="modal-card">
+<div class="modal-head"><div><div class="eyeline" id="modalTags"></div><h2 id="modalTitle"></h2><div class="meta" id="modalMeta"></div></div><button class="close" id="close" aria-label="Close">×</button></div>
+<div class="modal-body"><div class="cardtable" id="fightList"></div><div class="modal-sources" id="modalSources"></div></div>
+</div>
+</div>
+<div class="toast" id="toast"></div>
+
+<footer><div class="shell footer-row">
+<div><strong>FightSlate</strong><br>Verified fight calendar prototype</div>
+<div class="legal">Fighter images are packaged for prototype demonstration and retain their listed source attribution. A commercial launch should secure explicit image rights or use a licensed editorial media feed. Odds are intentionally omitted until a licensed provider with timestamps and jurisdiction data is connected.</div>
+</div></footer>
+
+<script>
+const EVENTS = [{"id": "boxing-pacheco-aleem-2026-07-18", "sport": "Boxing", "promotion": "Matchroom Boxing", "title": "Pacheco vs Aleem", "headline": "Diego Pacheco vs Immanuwel Aleem", "date": "2026-07-18", "start": "2026-07-19T00:00:00Z", "timePrecision": "BROADCAST_CONFIRMED", "timeNote": "Main broadcast 8:00 PM ET. Matchroom lists fight-day activity beginning at 2:30 PM PT.", "venue": "Dignity Health Sports Park", "location": "Carson, California", "network": "DAZN", "status": "CONFIRMED", "cardStatus": "Full official card published", "featured": true, "images": [{"name": "Diego Pacheco", "path": "assets/fighters/diego-pacheco.png", "credit": "Matchroom Boxing"}, {"name": "Immanuwel Aleem", "path": "assets/fighters/immanuwel-aleem.png", "credit": "Matchroom Boxing"}], "sources": [{"label": "Matchroom official event card", "url": "https://www.matchroomboxing.com/events/pacheco-vs-aleem/"}, {"label": "Broadcast-time report", "url": "https://www.boxingscene.com/articles/diego-pacheco-vs-immanuwel-aleem-how-to-watch-start-time-undercard"}], "fights": [{"order": "Main event", "matchup": "Diego Pacheco vs Immanuwel Aleem", "detail": "Super middleweight"}, {"order": "Co-feature", "matchup": "Andy Cruz vs Abraham Montoya", "detail": "Lightweight"}, {"order": "Main card", "matchup": "Albert Gonzalez vs Aaron Alameda", "detail": "Featherweight"}, {"order": "Main card", "matchup": "Frank Espinoza vs Luis Caraballo", "detail": "Super featherweight"}, {"order": "Main card", "matchup": "Samuel Contreras vs Jorge Alberto Ayala", "detail": "Prospect bout"}, {"order": "Main card", "matchup": "Leo Atang vs Glen Williams", "detail": "Heavyweight"}]}, {"id": "ufc-du-plessis-usman-2026-07-18", "sport": "UFC / MMA", "promotion": "UFC", "title": "UFC Fight Night", "headline": "Dricus Du Plessis vs Kamaru Usman", "date": "2026-07-18", "start": "2026-07-19T00:00:00Z", "timePrecision": "OFFICIAL", "timeNote": "Main card 8:00 PM ET.", "venue": "Paycom Center", "location": "Oklahoma City, Oklahoma", "network": "Paramount+", "status": "CONFIRMED", "cardStatus": "12-bout card snapshot", "featured": true, "images": [{"name": "Dricus Du Plessis", "path": "assets/fighters/dricus-du-plessis.webp", "credit": "UFC-FR profile image"}, {"name": "Kamaru Usman", "path": "assets/fighters/kamaru-usman.webp", "credit": "UFC-FR profile image"}], "sources": [{"label": "UFC official event page", "url": "https://www.ufc.com/event/ufc-fight-night-july-18-2026"}, {"label": "UFC-FR card snapshot", "url": "https://www.ufc-fr.com/agenda-ufc.html"}], "fights": [{"order": "Main event", "matchup": "Dricus Du Plessis vs Kamaru Usman", "detail": "Middleweight"}, {"order": "Co-main event", "matchup": "Jared Cannonier vs Christian Leroy Duncan", "detail": "Middleweight"}, {"order": "Main card", "matchup": "Chase Hooper vs Mitch Ramirez", "detail": "Lightweight"}, {"order": "Main card", "matchup": "Tabatha Ricci vs Fatima Kline", "detail": "Women's strawweight"}, {"order": "Main card", "matchup": "Alberto Montes vs Tommy McMillen", "detail": "Featherweight"}, {"order": "Main card", "matchup": "Jose Delgado vs Austin Bashi", "detail": "Featherweight"}, {"order": "Prelim", "matchup": "Seok Hyun Ko vs Jean-Paul Lebosnoyani", "detail": "Welterweight"}, {"order": "Prelim", "matchup": "Felipe Franco vs Levi Rodrigues", "detail": "Bantamweight"}, {"order": "Prelim", "matchup": "Damien Anderson vs Ezra Elliott", "detail": "Lightweight"}, {"order": "Prelim", "matchup": "Alden Coria vs Stewart Nicoll", "detail": "Flyweight"}, {"order": "Prelim", "matchup": "Alvin Hines vs RJ Harris", "detail": "Heavyweight"}, {"order": "Prelim", "matchup": "Dione Barbosa vs Anna Melisano", "detail": "Women's bantamweight"}]}, {"id": "boxing-joshua-prenga-2026-07-25", "sport": "Boxing", "promotion": "Matchroom Boxing", "title": "Joshua vs Prenga", "headline": "Anthony Joshua vs Kristian Prenga", "date": "2026-07-25", "start": null, "timePrecision": "TBA", "timeNote": "Start time remains to be confirmed.", "venue": "Jeddah", "location": "Jeddah, Saudi Arabia", "network": "DAZN", "status": "CONFIRMED", "cardStatus": "13-bout official card published", "featured": true, "images": [{"name": "Anthony Joshua", "path": "assets/fighters/anthony-joshua.png", "credit": "Matchroom Boxing"}, {"name": "Kristian Prenga", "path": "assets/fighters/kristian-prenga.png", "credit": "Matchroom Boxing"}], "sources": [{"label": "Matchroom official event card", "url": "https://www.matchroomboxing.com/events/joshua-vs-prenga/"}], "fights": [{"order": "Main event", "matchup": "Anthony Joshua vs Kristian Prenga", "detail": "Heavyweight"}, {"order": "World title", "matchup": "Hamzah Sheeraz vs Simon Zachenhuber", "detail": "WBO super middleweight title"}, {"order": "World title", "matchup": "Josh Kelly vs Caoimhin Agyarko", "detail": "IBF super welterweight title"}, {"order": "Main card", "matchup": "Reito Tsutsumi vs Alvino Herrera Meza", "detail": "Featherweight"}, {"order": "Main card", "matchup": "Oleksandr Khyzhniak vs Lenny Patrach", "detail": "Light heavyweight"}, {"order": "Main card", "matchup": "Nishant Dev vs Cesar Diaz", "detail": "Super welterweight"}, {"order": "Undercard", "matchup": "Mikie Talon vs Orlando Pino", "detail": "Super bantamweight"}, {"order": "Undercard", "matchup": "Jacob Bank vs Pawel August", "detail": "Super middleweight"}, {"order": "Undercard", "matchup": "Mohammed Alakel vs Lyndon Chircop", "detail": "Lightweight"}, {"order": "Undercard", "matchup": "Ziyad Almaayouf vs Frank Mango", "detail": "Welterweight"}, {"order": "Undercard", "matchup": "Sultan Almohammed vs Efren Besalduch", "detail": "Lightweight"}, {"order": "Undercard", "matchup": "Omar Hikal vs Brian Castellano", "detail": "Middleweight"}, {"order": "Undercard", "matchup": "Mahmoud Mobark vs Bryan Zapata", "detail": "Lightweight"}]}, {"id": "ufc-ankalaev-guskov-2026-07-25", "sport": "UFC / MMA", "promotion": "UFC", "title": "UFC Fight Night Abu Dhabi", "headline": "Magomed Ankalaev vs Bogdan Guskov", "date": "2026-07-25", "start": "2026-07-25T16:00:00Z", "timePrecision": "OFFICIAL", "timeNote": "Main card 9:00 AM PDT, 12:00 PM ET.", "venue": "Etihad Arena", "location": "Abu Dhabi, United Arab Emirates", "network": "Paramount+", "status": "CONFIRMED", "cardStatus": "13-bout card snapshot", "featured": true, "images": [{"name": "Magomed Ankalaev", "path": "assets/fighters/magomed-ankalaev.webp", "credit": "UFC-FR profile image"}, {"name": "Bogdan Guskov", "path": "assets/fighters/bogdan-guskov.webp", "credit": "UFC-FR profile image"}], "sources": [{"label": "UFC official event page", "url": "https://www.ufc.com/event/ufc-fight-night-july-25-2026"}, {"label": "UFC-FR card snapshot", "url": "https://www.ufc-fr.com/agenda-ufc.html"}], "fights": [{"order": "Main event", "matchup": "Magomed Ankalaev vs Bogdan Guskov", "detail": "Light heavyweight"}, {"order": "Co-main event", "matchup": "Steve Erceg vs Ramazonbek Temirov", "detail": "Flyweight"}, {"order": "Main card", "matchup": "Islam Dulatov vs Wellington Turman", "detail": "Welterweight"}, {"order": "Main card", "matchup": "Magomed Zaynukov vs Damian Rzepecki", "detail": "Lightweight"}, {"order": "Main card", "matchup": "Rizvan Kuniev vs Tyrell Fortune", "detail": "Heavyweight"}, {"order": "Main card", "matchup": "Saygid Izagakhmaev vs Abubakar Vagaev", "detail": "Welterweight"}, {"order": "Prelim", "matchup": "Valter Walker vs Thomas Petersen", "detail": "Heavyweight"}, {"order": "Prelim", "matchup": "Dustin Jacoby vs Muhammad Said", "detail": "Light heavyweight"}, {"order": "Prelim", "matchup": "Santiago Ponzinibbio vs Sam Patterson", "detail": "Welterweight"}, {"order": "Prelim", "matchup": "Axel Sola vs Ismael Bonfim", "detail": "Lightweight"}, {"order": "Prelim", "matchup": "Brendson Ribeiro vs Magomed Tuchalov", "detail": "Light heavyweight"}, {"order": "Prelim", "matchup": "Nurullo Aliev vs Mike Davis", "detail": "Lightweight"}, {"order": "Prelim", "matchup": "Cody Gibson vs Abdul Hussein", "detail": "Bantamweight"}]}, {"id": "ufc-medic-rodriguez-2026-08-01", "sport": "UFC / MMA", "promotion": "UFC", "title": "UFC Fight Night Belgrade", "headline": "Uros Medic vs Daniel Rodriguez", "date": "2026-08-01", "start": null, "timePrecision": "TBA", "timeNote": "Official event date and venue are confirmed. Start time remains TBA.", "venue": "Belgrade Arena", "location": "Belgrade, Serbia", "network": "Paramount+", "status": "CONFIRMED", "cardStatus": "Partial card snapshot", "featured": true, "images": [{"name": "Uros Medic", "path": "assets/fighters/uros-medic.webp", "credit": "UFC-FR profile image"}, {"name": "Daniel Rodriguez", "path": "assets/fighters/daniel-rodriguez.webp", "credit": "UFC-FR profile image"}], "sources": [{"label": "UFC official event page", "url": "https://www.ufc.com/event/ufc-fight-night-august-01-2026"}, {"label": "UFC-FR card snapshot", "url": "https://www.ufc-fr.com/agenda-ufc.html"}], "fights": [{"order": "Main event", "matchup": "Uros Medic vs Daniel Rodriguez", "detail": "Welterweight"}, {"order": "Co-main event", "matchup": "Jan Blachowicz vs Navajo Stirling", "detail": "Light heavyweight"}, {"order": "Main card", "matchup": "Max Gimenis vs Jovan Leka", "detail": "Heavyweight"}, {"order": "Main card", "matchup": "Gilbert Urbina vs Vlasto Cepo", "detail": "Middleweight"}, {"order": "Main card", "matchup": "Dusko Todorovic vs Robert Valentin", "detail": "Middleweight"}, {"order": "Main card", "matchup": "Marcin Tybura vs Aleksandar Rakic", "detail": "Heavyweight"}, {"order": "Prelim", "matchup": "Ludovit Klein vs Tofiq Musayev", "detail": "Lightweight"}, {"order": "Prelim", "matchup": "Bogdan Grad vs Dennis Buzukja", "detail": "Featherweight"}]}, {"id": "ufc-gamrot-salkilld-2026-08-08", "sport": "UFC / MMA", "promotion": "UFC", "title": "UFC Fight Night", "headline": "Mateusz Gamrot vs Quillan Salkilld", "date": "2026-08-08", "start": "2026-08-08T21:00:00Z", "timePrecision": "OFFICIAL", "timeNote": "Main card 2:00 PM PDT, 5:00 PM ET.", "venue": "Meta APEX", "location": "Las Vegas, Nevada", "network": "Paramount+", "status": "CONFIRMED", "cardStatus": "8-bout card snapshot", "featured": true, "images": [{"name": "Mateusz Gamrot", "path": "assets/fighters/mateusz-gamrot.webp", "credit": "UFC-FR profile image"}, {"name": "Quillan Salkilld", "path": "assets/fighters/quillan-salkilld.webp", "credit": "UFC-FR profile image"}], "sources": [{"label": "UFC official event page", "url": "https://www.ufc.com/event/ufc-fight-night-august-08-2026"}, {"label": "UFC-FR card snapshot", "url": "https://www.ufc-fr.com/agenda-ufc.html"}], "fights": [{"order": "Main event", "matchup": "Mateusz Gamrot vs Quillan Salkilld", "detail": "Lightweight"}, {"order": "Co-main event", "matchup": "Louie Sutherland vs Jose Luiz", "detail": "Heavyweight"}, {"order": "Main card", "matchup": "Juliana Miller vs Ravena Oliveira", "detail": "Women's flyweight"}, {"order": "Main card", "matchup": "Steven Asplund vs Guilherme Pat", "detail": "Heavyweight"}, {"order": "Main card", "matchup": "Amanda Lemos vs Alexia Thainara", "detail": "Women's strawweight"}, {"order": "Main card", "matchup": "Billy Quarantillo vs Diego Ferreira", "detail": "Lightweight"}, {"order": "Prelim", "matchup": "Donte Johnson vs Eric McConico", "detail": "Middleweight"}, {"order": "Prelim", "matchup": "Diyar Nurgozhay vs Bruno Lopes", "detail": "Light heavyweight"}]}, {"id": "boxing-teremoana-savage-2026-08-12", "sport": "Boxing", "promotion": "Matchroom Boxing", "title": "Teremoana vs Savage", "headline": "Teremoana Teremoana vs Brandon Głowacki Savage", "date": "2026-08-12", "start": null, "timePrecision": "TBA", "timeNote": "Official event listing published. Detailed card and start time remain pending.", "venue": "The Star", "location": "Gold Coast, Australia", "network": "DAZN", "status": "ANNOUNCED", "cardStatus": "Main event announced", "featured": false, "images": [], "sources": [{"label": "Matchroom official upcoming events", "url": "https://www.matchroomboxing.com/events/"}], "fights": [{"order": "Main event", "matchup": "Teremoana vs Savage", "detail": "Full card pending"}]}, {"id": "ufc-330-2026-08-15", "sport": "UFC / MMA", "promotion": "UFC", "title": "UFC 330", "headline": "Islam Makhachev vs Ian Machado Garry", "date": "2026-08-15", "start": "2026-08-16T01:00:00Z", "timePrecision": "OFFICIAL", "timeNote": "Main card 6:00 PM PDT, 9:00 PM ET.", "venue": "Xfinity Mobile Arena", "location": "Philadelphia, Pennsylvania", "network": "Paramount+", "status": "CONFIRMED", "cardStatus": "Main event verified", "featured": false, "images": [], "sources": [{"label": "UFC official event page", "url": "https://www.ufc.com/event/ufc-330"}], "fights": [{"order": "Main event", "matchup": "Islam Makhachev vs Ian Machado Garry", "detail": "Welterweight title"}]}, {"id": "boxing-marksman-barreto-2026-08-28", "sport": "Boxing", "promotion": "Matchroom Boxing", "title": "Marksman vs Barreto", "headline": "Marksman vs Barreto", "date": "2026-08-28", "start": null, "timePrecision": "TBA", "timeNote": "Official event listing published. Detailed card and start time remain pending.", "venue": "Caribe Royale", "location": "Orlando, Florida", "network": "DAZN", "status": "ANNOUNCED", "cardStatus": "Main event announced", "featured": false, "images": [], "sources": [{"label": "Matchroom official upcoming events", "url": "https://www.matchroomboxing.com/events/"}], "fights": [{"order": "Main event", "matchup": "Marksman vs Barreto", "detail": "Full card pending"}]}, {"id": "boxing-itauma-hrgovic-2026-08-29", "sport": "Boxing", "promotion": "Queensberry Promotions", "title": "Natural Born Thriller", "headline": "Moses Itauma vs Filip Hrgovic", "date": "2026-08-29", "start": null, "timePrecision": "TBA", "timeNote": "Date, venue, and DAZN PPV distribution are confirmed. Start time remains TBA.", "venue": "The O2", "location": "London, United Kingdom", "network": "DAZN PPV", "status": "CONFIRMED", "cardStatus": "Four announced bouts", "featured": true, "images": [{"name": "Moses Itauma", "path": "assets/fighters/moses-itauma.webp", "credit": "Queensberry Promotions"}, {"name": "Filip Hrgovic", "path": "assets/fighters/filip-hrgovic.webp", "credit": "Queensberry Promotions"}], "sources": [{"label": "Queensberry official event page", "url": "https://queensberry.co.uk/pages/moses-itauma-vs-filip-hrgovic-natural-born-thriller"}], "fights": [{"order": "Main event", "matchup": "Moses Itauma vs Filip Hrgovic", "detail": "Heavyweight"}, {"order": "Main card", "matchup": "Sam Noakes vs Denys Berinchyk", "detail": "Lightweight"}, {"order": "Title fight", "matchup": "Constantin Ursu vs Ben Vaughan", "detail": "British and Commonwealth welterweight titles"}, {"order": "Main card", "matchup": "Aloys Junior vs Mike Perez", "detail": "Cruiserweight"}]}, {"id": "boxing-ruiz-knyba-2026-09-04", "sport": "Boxing", "promotion": "Matchroom Boxing", "title": "Ruiz Jr vs Knyba", "headline": "Andy Ruiz Jr vs Damian Knyba", "date": "2026-09-04", "start": null, "timePrecision": "TBA", "timeNote": "Official event listing published. Detailed card and start time remain pending.", "venue": "Prudential Center", "location": "Newark, New Jersey", "network": "DAZN", "status": "ANNOUNCED", "cardStatus": "Main event announced", "featured": false, "images": [], "sources": [{"label": "Matchroom official upcoming events", "url": "https://www.matchroomboxing.com/events/"}], "fights": [{"order": "Main event", "matchup": "Andy Ruiz Jr vs Damian Knyba", "detail": "Heavyweight"}]}, {"id": "boxing-taylor-pili-2026-09-05", "sport": "Boxing", "promotion": "Matchroom Boxing", "title": "Taylor vs Pili", "headline": "Katie Taylor vs Pili", "date": "2026-09-05", "start": null, "timePrecision": "TBA", "timeNote": "Official event listing published. Detailed card and start time remain pending.", "venue": "Croke Park", "location": "Dublin, Ireland", "network": "DAZN", "status": "ANNOUNCED", "cardStatus": "Main event announced", "featured": false, "images": [], "sources": [{"label": "Matchroom official upcoming events", "url": "https://www.matchroomboxing.com/events/"}], "fights": [{"order": "Main event", "matchup": "Taylor vs Pili", "detail": "Full card pending"}]}];
+const DEVELOPING = [{"id": "dev-haney-stevenson", "title": "Devin Haney vs Shakur Stevenson", "status": "VERBAL AGREEMENT REPORTED", "confidence": 78, "target": "October 2026 target discussed", "weight": "144-pound catchweight discussed", "summary": "Shakur Stevenson said the sides had verbally agreed to fight, but reporting also emphasized that no formal contract had been signed. Team Haney has publicly described this as the priority matchup.", "sources": [{"label": "TalkSPORT report", "url": "https://talksport.com/boxing/4432486/shakur-stevenson-verbally-agrees-devin-haney-details/"}, {"label": "Boxing News 24/7 summary of Team Haney position", "url": "https://www.boxing247.com/boxing-news/bill-haney-says-keyshawn-davis-is-on-the-list-but-eyes-shakur-stevenson-fight/306858"}]}, {"id": "dev-haney-keyshawn", "title": "Devin Haney vs Keyshawn Davis", "status": "MANDATORY AND BACKUP PATH", "confidence": 58, "target": "No confirmed date", "weight": "Welterweight title path", "summary": "Reporting says the WBO ordered Haney to face Keyshawn Davis, while Team Haney remains focused on Stevenson and has described Davis as still being on the list. That makes this credible pressure, not a confirmed booking.", "sources": [{"label": "Boxing News 24/7 report", "url": "https://www.boxing247.com/boxing-news/bill-haney-says-keyshawn-davis-is-on-the-list-but-eyes-shakur-stevenson-fight/306858"}]}, {"id": "dev-lightweight-orbit", "title": "Haney, Stevenson, and Keyshawn storyline", "status": "STORYLINE CLUSTER", "confidence": 66, "target": "Track negotiations and mandatory deadlines", "weight": "Cross-division business story", "summary": "FightSlate can treat this as a storyline hub rather than inventing a three-way fight. The product should connect callouts, mandatory orders, camp comments, weight negotiations, and any eventual conversion into a confirmed event.", "sources": [{"label": "Current Team Haney comments", "url": "https://www.boxing247.com/boxing-news/bill-haney-says-keyshawn-davis-is-on-the-list-but-eyes-shakur-stevenson-fight/306858"}]}];
+const state={search:"",sport:"All",promotion:"All",status:"All"};
+const list=document.getElementById("eventList"), modal=document.getElementById("modal"), toast=document.getElementById("toast");
+
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+function prettyDate(date){return new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",year:"numeric"}).format(new Date(date+"T12:00:00"))}
+function localTime(event){
+ if(!event.start)return "Time TBA";
+ return new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZoneName:"short"}).format(new Date(event.start));
+}
+function parts(date){const d=new Date(date+"T12:00:00");return{m:new Intl.DateTimeFormat("en-US",{month:"short"}).format(d),d:new Intl.DateTimeFormat("en-US",{day:"2-digit"}).format(d),y:d.getFullYear()}}
+function filtered(){
+ const q=state.search.toLowerCase().trim();
+ return EVENTS.filter(e=>{
+  const blob=[e.title,e.headline,e.venue,e.location,e.network,e.promotion,...e.fights.map(f=>f.matchup)].join(" ").toLowerCase();
+  return(!q||blob.includes(q))&&(state.sport==="All"||e.sport===state.sport)&&(state.promotion==="All"||e.promotion===state.promotion)&&(state.status==="All"||e.status===state.status)
+ }).sort((a,b)=>a.date.localeCompare(b.date));
+}
+function fallbackGraphic(sport){
+ return `<div style="height:100%;display:grid;place-items:center;font-size:4rem;background:radial-gradient(circle,${sport==="Boxing"?"rgba(255,91,53,.22)":"rgba(90,168,255,.22)"},transparent 62%)">${sport==="Boxing"?"🥊":"⬡"}</div>`;
+}
+function faceoffCard(e){
+ const imgs=e.images.length===2?`<img src="${esc(e.images[0].path)}" alt="${esc(e.images[0].name)}"><img src="${esc(e.images[1].path)}" alt="${esc(e.images[1].name)}">`:fallbackGraphic(e.sport);
+ return `<article class="faceoff ${e.sport==="Boxing"?"":"mma"}">
+  <div class="faceoff-images">${imgs}<div class="vs">VS</div></div>
+  <div class="faceoff-copy"><div class="eyeline"><span class="tag ${e.sport==="Boxing"?"orange":"blue"}">${esc(e.sport)}</span><span class="tag">${esc(e.network)}</span></div>
+  <h3>${esc(e.headline)}</h3><div class="meta">${esc(prettyDate(e.date))} · ${esc(e.venue)}<br>${esc(e.timeNote)}</div>
+  <button class="btn" style="margin-top:13px;width:100%" data-open="${e.id}">View ${e.fights.length}-bout card</button>
+  <div class="credit">Photo credit: ${esc(e.images.map(i=>i.credit).filter((v,i,a)=>a.indexOf(v)===i).join(" and ")||"Graphic placeholder")}</div></div>
+ </article>`;
+}
+function renderFeatured(){
+ const boxing=EVENTS.filter(e=>e.featured&&e.sport==="Boxing").slice(0,3);
+ const ufc=EVENTS.filter(e=>e.featured&&e.sport==="UFC / MMA").slice(0,3);
+ document.getElementById("boxingGrid").innerHTML=boxing.map(faceoffCard).join("");
+ document.getElementById("ufcGrid").innerHTML=ufc.map(faceoffCard).join("");
+}
+function render(){
+ const rows=filtered();
+ list.innerHTML=rows.map(e=>{const p=parts(e.date);return `<article class="event">
+  <div class="datebox"><span class="month">${esc(p.m)}</span><span class="day">${esc(p.d)}</span><span class="year">${esc(p.y)}</span></div>
+  <div><div class="eyeline"><span class="tag ${e.sport==="Boxing"?"orange":"blue"}">${esc(e.sport)}</span><span class="tag ${e.status==="CONFIRMED"?"green":""}">${esc(e.status)}</span><span class="tag">${esc(e.promotion)}</span></div>
+  <h3>${esc(e.title)}</h3><div class="sub">${esc(e.headline)}</div>
+  <div class="event-meta"><span>${esc(localTime(e))}</span><span>${esc(e.venue)}, ${esc(e.location)}</span><span>${esc(e.network)}</span><span>${esc(e.cardStatus)}</span></div>
+  <div class="source-line">${e.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join("")}</div></div>
+  <div class="event-actions"><button class="btn primary" data-open="${e.id}">Full card</button><button class="btn" data-cal="${e.id}">Add to calendar</button></div>
+ </article>`}).join("");
+ document.getElementById("empty").style.display=rows.length?"none":"block";
+}
+function renderDeveloping(){
+ document.getElementById("developingGrid").innerHTML=DEVELOPING.map(d=>`<article class="developing-card">
+ <div class="eyeline"><span class="tag gold">In the works</span><span class="tag">${esc(d.status)}</span></div>
+ <h3>${esc(d.title)}</h3><div class="meta">${esc(d.target)} · ${esc(d.weight)}</div>
+ <div class="score"><strong>${esc(d.confidence)} / 100</strong><span class="meta">Evidence confidence</span></div><div class="scorebar"><span style="width:${d.confidence}%"></span></div>
+ <p>${esc(d.summary)}</p>${d.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join("<br>")}
+ </article>`).join("");
+}
+function openEvent(id){
+ const e=EVENTS.find(x=>x.id===id);if(!e)return;
+ document.getElementById("modalTags").innerHTML=`<span class="tag ${e.sport==="Boxing"?"orange":"blue"}">${esc(e.sport)}</span><span class="tag">${esc(e.status)}</span><span class="tag">${esc(e.cardStatus)}</span>`;
+ document.getElementById("modalTitle").textContent=e.headline;
+ document.getElementById("modalMeta").textContent=`${prettyDate(e.date)} · ${e.timeNote} · ${e.venue}, ${e.location} · ${e.network}`;
+ document.getElementById("fightList").innerHTML=e.fights.map(f=>`<div class="fight"><div class="order">${esc(f.order)}</div><strong>${esc(f.matchup)}</strong><span>${esc(f.detail)}</span></div>`).join("");
+ document.getElementById("modalSources").innerHTML="<strong>Sources:</strong> "+e.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join("");
+ modal.classList.add("open");document.body.style.overflow="hidden";
+}
+function closeModal(){modal.classList.remove("open");document.body.style.overflow=""}
+function icsEsc(v){return String(v).replace(/\\/g,"\\\\").replace(/\n/g,"\\n").replace(/,/g,"\\,").replace(/;/g,"\\;")}
+function stamp(d){return new Date(d).toISOString().replace(/[-:]/g,"").replace(/\.\d{3}Z$/,"Z")}
+function vevent(e){
+ const desc=[e.headline,`Promotion: ${e.promotion}`,`Watch: ${e.network}`,e.timeNote,"","Card:",...e.fights.map(f=>`${f.order}: ${f.matchup} (${f.detail})`),...e.sources.map(s=>`Source: ${s.label} ${s.url}`)].join("\n");
+ if(e.start){
+  const start=new Date(e.start),end=new Date(start.getTime()+6*3600000);
+  return ["BEGIN:VEVENT",`UID:${e.id}@fightslate.app`,`DTSTAMP:${stamp(new Date())}`,`DTSTART:${stamp(start)}`,`DTEND:${stamp(end)}`,`SUMMARY:${icsEsc(e.headline)}`,`LOCATION:${icsEsc(e.venue+", "+e.location)}`,`DESCRIPTION:${icsEsc(desc)}`,"END:VEVENT"].join("\r\n");
+ }
+ const day=e.date.replaceAll("-",""), next=new Date(e.date+"T12:00:00Z");next.setUTCDate(next.getUTCDate()+1);const nextDay=next.toISOString().slice(0,10).replaceAll("-","");
+ return ["BEGIN:VEVENT",`UID:${e.id}@fightslate.app`,`DTSTAMP:${stamp(new Date())}`,`DTSTART;VALUE=DATE:${day}`,`DTEND;VALUE=DATE:${nextDay}`,`SUMMARY:${icsEsc(e.headline+" · Time TBA")}`,`LOCATION:${icsEsc(e.venue+", "+e.location)}`,`DESCRIPTION:${icsEsc(desc)}`,"END:VEVENT"].join("\r\n");
+}
+function download(events,name){
+ if(!events.length)return showToast("No events selected.");
+ const data=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//FightSlate//Verified Fight Calendar//EN","CALSCALE:GREGORIAN","METHOD:PUBLISH",...events.map(vevent),"END:VCALENDAR"].join("\r\n");
+ const blob=new Blob([data],{type:"text/calendar;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);showToast(`${events.length} event${events.length===1?"":"s"} downloaded.`);
+}
+function showToast(msg){toast.textContent=msg;toast.classList.add("show");clearTimeout(showToast.t);showToast.t=setTimeout(()=>toast.classList.remove("show"),2200)}
+document.addEventListener("click",e=>{const o=e.target.closest("[data-open]"),c=e.target.closest("[data-cal]");if(o)openEvent(o.dataset.open);if(c){const x=EVENTS.find(v=>v.id===c.dataset.cal);if(x)download([x],`${x.id}.ics`)}})
+document.getElementById("close").onclick=closeModal;modal.onclick=e=>{if(e.target===modal)closeModal()};document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+document.getElementById("search").oninput=e=>{state.search=e.target.value;render()};document.getElementById("sport").onchange=e=>{state.sport=e.target.value;render()};document.getElementById("promotion").onchange=e=>{state.promotion=e.target.value;render()};document.getElementById("status").onchange=e=>{state.status=e.target.value;render()};
+document.getElementById("downloadAll").onclick=()=>download(EVENTS,"fightslate-verified-schedule.ics");document.getElementById("downloadVisible").onclick=()=>download(filtered(),"fightslate-visible-events.ics");
+[...new Set(EVENTS.map(e=>e.promotion))].sort().forEach(p=>{const o=document.createElement("option");o.value=p;o.textContent=p;document.getElementById("promotion").appendChild(o)});
+document.getElementById("eventCount").textContent=EVENTS.length;document.getElementById("boutCount").textContent=EVENTS.reduce((n,e)=>n+e.fights.length,0);document.getElementById("photoCount").textContent=EVENTS.reduce((n,e)=>n+e.images.length,0);
+
+async function submitMailingList(event){
+ event.preventDefault();
+ const status=document.getElementById("mailingStatus"), button=event.submitter||document.querySelector("#mailingForm button[type=submit]");
+ status.className="mail-status";status.textContent="Submitting…";button.disabled=true;
+ try{
+  const payload={email:document.getElementById("mailingEmail").value,preferences:{boxing:document.getElementById("mailBoxing").checked,mma:document.getElementById("mailMma").checked,notifyNewFights:document.getElementById("mailNew").checked,notifyUpcomingFights:document.getElementById("mailUpcoming").checked,reminderHours:Number(document.getElementById("mailReminder").value),timezone:Intl.DateTimeFormat().resolvedOptions().timeZone||"America/New_York"}};
+  const response=await fetch("/api/mailing-list/subscribe",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(payload)});
+  const result=await response.json().catch(()=>({}));
+  if(!response.ok)throw new Error(result.error||`Unable to subscribe (${response.status})`);
+  status.textContent=result.message||"Check your email to confirm.";
+  document.getElementById("mailingEmail").value="";
+ }catch(error){status.className="mail-status error";status.textContent=location.protocol==="file:"?"Open FightSlate through the live service to activate email alerts.":error.message;}finally{button.disabled=false}
+}
+document.getElementById("mailingForm").addEventListener("submit",submitMailingList);
+renderFeatured();renderDeveloping();render();
+</script>
+<script src="live-api-overlay.js"></script>
+</body>
+</html>
