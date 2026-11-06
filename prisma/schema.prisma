@@ -8,68 +8,127 @@ datasource db {
 }
 
 model Event {
-  id String @id
-  sport String
-  promotion String
-  title String
-  headline String
-  date DateTime @db.Date
-  start DateTime?
-  timeNote String
-  venue String
-  location String
-  network String
-  status String
-  images Json
-  sources Json
-  fights Json
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  deliveries Delivery[]
+  id                String        @id
+  sport             String
+  promotion         String
+  title             String
+  headline          String
+  date              DateTime      @db.Date
+  timezone          String?
+  start             DateTime?
+  startKind         String?
+  timeNote          String
+  venue             String
+  location          String
+  network           String
+  broadcastVerified Boolean       @default(false)
+  status            String
+  statusReason      String?
+  images            Json
+  sources           Json
+  fights            Json
+  sourceIds         Json          @default("[]")
+  conflicts         Json          @default("[]")
+  verifiedAt        DateTime?
+  firstSeenAt       DateTime      @default(now())
+  lastSeenAt        DateTime      @default(now())
+  sequence          Int           @default(0)
+  missingFromSource Boolean       @default(false)
+  announce          Boolean       @default(true)
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+  deliveries        Delivery[]
+  changes           EventChange[]
+
   @@index([date, sport, status])
 }
 
+model EventChange {
+  id        String   @id
+  eventId   String
+  type      String
+  field     String?
+  bout      String?
+  from      String?
+  to        String?
+  summary   String
+  createdAt DateTime @default(now())
+  event     Event    @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@index([eventId, createdAt])
+  @@index([createdAt])
+}
+
+model IngestionRun {
+  id         String   @id
+  source     String
+  status     String
+  startedAt  DateTime
+  finishedAt DateTime
+  durationMs Int
+  received   Int      @default(0)
+  accepted   Int      @default(0)
+  rejected   Int      @default(0)
+  warnings   Json     @default("[]")
+  error      String?
+  meta       Json?
+  usedCacheFrom String?
+
+  @@index([source, startedAt])
+  @@index([startedAt])
+}
+
+model SourceCache {
+  source    String   @id
+  events    Json
+  fetchedAt DateTime
+}
+
 model DevelopingMatchup {
-  id String @id
-  title String
-  status String
-  confidence Int
-  target String
-  weight String
-  summary String
-  sources Json
-  updatedAt DateTime @updatedAt
+  id         String   @id
+  sport      String?
+  title      String
+  status     String
+  confidence Int?
+  target     String
+  weight     String?
+  summary    String
+  sources    Json
+  updatedAt  DateTime @updatedAt
 }
 
 model Subscriber {
-  id String @id @default(uuid())
-  email String @unique
-  status String @default("PENDING")
-  boxing Boolean @default(true)
-  mma Boolean @default(true)
-  newFightAlerts Boolean @default(true)
-  upcomingAlerts Boolean @default(true)
-  reminderHours Int @default(24)
-  confirmTokenHash String?
+  id                   String     @id @default(uuid())
+  email                String     @unique
+  status               String     @default("PENDING")
+  boxing               Boolean    @default(true)
+  mma                  Boolean    @default(true)
+  newFightAlerts       Boolean    @default(true)
+  upcomingAlerts       Boolean    @default(true)
+  reminderHours        Int        @default(24)
+  confirmTokenHash     String?
+  confirmSentAt        DateTime?
+  pendingPrefs         Json?
   unsubscribeTokenHash String?
-  confirmedAt DateTime?
-  unsubscribedAt DateTime?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  deliveries Delivery[]
+  confirmedAt          DateTime?
+  unsubscribedAt       DateTime?
+  createdAt            DateTime   @default(now())
+  updatedAt            DateTime   @updatedAt
+  deliveries           Delivery[]
 }
 
 model Delivery {
-  id String @id @default(uuid())
+  id           String      @id @default(uuid())
   subscriberId String
-  eventId String?
-  type String
-  dedupeKey String @unique
-  providerId String?
-  status String
-  error String?
-  createdAt DateTime @default(now())
-  subscriber Subscriber @relation(fields:[subscriberId], references:[id], onDelete: Cascade)
-  event Event? @relation(fields:[eventId], references:[id], onDelete: SetNull)
+  eventId      String?
+  type         String
+  dedupeKey    String      @unique
+  providerId   String?
+  status       String
+  error        String?
+  createdAt    DateTime    @default(now())
+  subscriber   Subscriber  @relation(fields: [subscriberId], references: [id], onDelete: Cascade)
+  event        Event?      @relation(fields: [eventId], references: [id], onDelete: SetNull)
+
   @@index([subscriberId, createdAt])
 }

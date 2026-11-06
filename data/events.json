@@ -1,23 +1,1875 @@
-[
-{"id":"boxing-joshua-prenga-2026-07-25","sport":"Boxing","promotion":"Matchroom Boxing","title":"Joshua vs Prenga","headline":"Anthony Joshua vs Kristian Prenga","date":"2026-07-25","start":null,"timeNote":"Start time TBA","venue":"Jeddah","location":"Jeddah, Saudi Arabia","network":"DAZN","status":"CONFIRMED","images":["/assets/fighters/anthony-joshua.png","/assets/fighters/kristian-prenga.png"],"sources":[{"label":"Matchroom official event page","url":"https://www.matchroomboxing.com/events/joshua-vs-prenga/"}],"fights":["Anthony Joshua vs Kristian Prenga","Hamzah Sheeraz vs Simon Zachenhuber","Josh Kelly vs Caoimhin Agyarko","Reito Tsutsumi vs Alvino Herrera Meza","Oleksandr Khyzhniak vs Lenny Patrach","Nishant Dev vs Cesar Diaz","Mikie Talon vs Orlando Pino","Jacob Bank vs Pawel August","Mohammed Alakel vs Lyndon Chircop","Ziyad Almaayouf vs Frank Mango","Sultan Almohammed vs Efren Besalduch","Omar Hikal vs Brian Castellano","Mahmoud Mobark vs Bryan Zapata"]},
-{"id":"boxing-spence-tszyu-2026-07-25","sport":"Boxing","promotion":"Premier Boxing Champions","title":"Spence vs Tszyu","headline":"Errol Spence Jr. vs Tim Tszyu","date":"2026-07-25","start":"2026-07-26T01:00:00Z","timeNote":"9:00 PM ET / 6:00 PM PT","venue":"Afterpay Arena","location":"Sydney, Australia","network":"Prime Video PPV, DAZN, PPV.com","status":"CONFIRMED","images":["/assets/fighters/errol-spence.jpg","/assets/fighters/tim-tszyu.jpg"],"sources":[{"label":"PBC official fight night","url":"https://www.premierboxingchampions.com/fight-night-july-25-2026"}],"fights":["Errol Spence Jr. vs Tim Tszyu","Stephen Fulton Jr. vs Liam Wilson","Ahmad Reda vs Paul Fleming","Callum Peters vs Ivan Actis"]},
-{"id":"ufc-ankalaev-guskov-2026-07-25","sport":"UFC / MMA","promotion":"UFC","title":"UFC Fight Night Abu Dhabi","headline":"Magomed Ankalaev vs Bogdan Guskov","date":"2026-07-25","start":"2026-07-25T16:00:00Z","timeNote":"12:00 PM ET main card","venue":"Etihad Arena","location":"Abu Dhabi, United Arab Emirates","network":"Paramount+","status":"CONFIRMED","images":["/assets/fighters/magomed-ankalaev.webp","/assets/fighters/bogdan-guskov.webp"],"sources":[{"label":"UFC official events schedule","url":"https://www.ufc.com/events"}],"fights":["Magomed Ankalaev vs Bogdan Guskov","Steve Erceg vs Ramazonbek Temirov","Islam Dulatov vs Wellington Turman","Magomed Zaynukov vs Damian Rzepecki","Rizvan Kuniev vs Tyrell Fortune","Saygid Izagakhmaev vs Abubakar Vagaev"]},
-{"id":"boxing-roach-zepeda-2026-08-01","sport":"Boxing","promotion":"Golden Boy Promotions","title":"Roach Jr. vs Zepeda","headline":"Lamont Roach Jr. vs William Zepeda","date":"2026-08-01","start":null,"timeNote":"Start time TBA","venue":"The Theater at Virgin Hotels","location":"Las Vegas, Nevada","network":"DAZN","status":"CONFIRMED","images":[],"sources":[{"label":"Golden Boy official events","url":"https://www.goldenboy.com/events/"}],"fights":["Lamont Roach Jr. vs William Zepeda","Raymond Muratalla vs Robson Conceicao"]},
-{"id":"boxing-oleary-chamberlain-2026-08-01","sport":"Boxing","promotion":"Queensberry Promotions","title":"No Turning Back","headline":"Pierce O'Leary vs Mark Chamberlain","date":"2026-08-01","start":null,"timeNote":"Start time TBA","venue":"3Arena","location":"Dublin, Ireland","network":"DAZN","status":"CONFIRMED","images":[],"sources":[{"label":"Queensberry official event page","url":"https://queensberry.co.uk/pages/pierce-oleary-vs-mark-chamberlain-no-turning-back"}],"fights":["Pierce O'Leary vs Mark Chamberlain","Royston Barney-Smith vs Reece Bellotti","Gary Cully vs Lee Reeves","Steven Cairns vs Senan Kelly","Ben Fail vs Craig O'Brien","Machlan Arthur","Adam Olaniyan","Bobbi Flood","Sean McComb"]},
-{"id":"ufc-medic-rodriguez-2026-08-01","sport":"UFC / MMA","promotion":"UFC","title":"UFC Fight Night Belgrade","headline":"Uros Medic vs Daniel Rodriguez","date":"2026-08-01","start":"2026-08-01T17:00:00Z","timeNote":"1:00 PM ET main card","venue":"Belgrade Arena","location":"Belgrade, Serbia","network":"Paramount+","status":"CONFIRMED","images":[],"sources":[{"label":"UFC official events schedule","url":"https://www.ufc.com/events"}],"fights":["Uros Medic vs Daniel Rodriguez","Jan Blachowicz vs Navajo Stirling","Marcin Tybura vs Aleksandar Rakic"]},
-{"id":"ufc-gamrot-salkilld-2026-08-08","sport":"UFC / MMA","promotion":"UFC","title":"UFC Fight Night","headline":"Mateusz Gamrot vs Quillan Salkilld","date":"2026-08-08","start":"2026-08-08T21:00:00Z","timeNote":"5:00 PM ET main card","venue":"Meta APEX","location":"Las Vegas, Nevada","network":"Paramount+","status":"CONFIRMED","images":[],"sources":[{"label":"UFC official events schedule","url":"https://www.ufc.com/events"}],"fights":["Mateusz Gamrot vs Quillan Salkilld","Louie Sutherland vs Jose Luiz","Amanda Lemos vs Alexia Thainara","Billy Quarantillo vs Diego Ferreira"]},
-{"id":"boxing-teremoana-savage-2026-08-12","sport":"Boxing","promotion":"Matchroom Boxing","title":"Teremoana vs Savage","headline":"Teremoana Teremoana vs Savage","date":"2026-08-12","start":null,"timeNote":"Start time TBA","venue":"The Star","location":"Gold Coast, Australia","network":"DAZN","status":"ANNOUNCED","images":[],"sources":[{"label":"Matchroom official schedule","url":"https://www.matchroomboxing.com/events/"}],"fights":["Teremoana Teremoana vs Savage"]},
-{"id":"ufc-330-2026-08-15","sport":"UFC / MMA","promotion":"UFC","title":"UFC 330","headline":"Islam Makhachev vs Ian Machado Garry","date":"2026-08-15","start":"2026-08-16T01:00:00Z","timeNote":"9:00 PM ET main card","venue":"Xfinity Mobile Arena","location":"Philadelphia, Pennsylvania","network":"Paramount+","status":"CONFIRMED","images":[],"sources":[{"label":"UFC official events schedule","url":"https://www.ufc.com/events"}],"fights":["Islam Makhachev vs Ian Machado Garry"]},
-{"id":"boxing-liddard-morello-2026-08-22","sport":"Boxing","promotion":"Matchroom Boxing","title":"Liddard vs Morello","headline":"Liddard vs Morello","date":"2026-08-22","start":null,"timeNote":"Start time TBA","venue":"York Hall","location":"London, United Kingdom","network":"DAZN","status":"ANNOUNCED","images":[],"sources":[{"label":"Matchroom official event page","url":"https://www.matchroomboxing.com/events/liddard-vs-morello/"}],"fights":["Liddard vs Morello"]},
-{"id":"boxing-rolly-teofimo-2026-08-22","sport":"Boxing","promotion":"Premier Boxing Champions","title":"Rolly vs Teofimo","headline":"Rolando Romero vs Teofimo Lopez","date":"2026-08-22","start":"2026-08-23T00:00:00Z","timeNote":"8:00 PM ET / 5:00 PM PT","venue":"T-Mobile Arena","location":"Las Vegas, Nevada","network":"Prime Video PPV, DAZN","status":"CONFIRMED","images":["/assets/fighters/rolly-romero.jpg","/assets/fighters/teofimo-lopez.jpg"],"sources":[{"label":"PBC official fight night","url":"https://www.premierboxingchampions.com/fight-night-august-22-2026"}],"fights":["Rolando Romero vs Teofimo Lopez"]},
-{"id":"ufc-hernandez-rodrigues-2026-08-22","sport":"UFC / MMA","promotion":"UFC","title":"UFC Fight Night Sacramento","headline":"Anthony Hernandez vs Gregory Rodrigues","date":"2026-08-22","start":"2026-08-23T00:00:00Z","timeNote":"8:00 PM ET main card","venue":"Golden 1 Center","location":"Sacramento, California","network":"Paramount+","status":"CONFIRMED","images":[],"sources":[{"label":"UFC official events schedule","url":"https://www.ufc.com/events"}],"fights":["Anthony Hernandez vs Gregory Rodrigues"]},
-{"id":"boxing-marksman-barreto-2026-08-28","sport":"Boxing","promotion":"Matchroom Boxing","title":"Marksman vs Barreto","headline":"Marksman vs Barreto","date":"2026-08-28","start":null,"timeNote":"Start time TBA","venue":"Caribe Royale","location":"Orlando, Florida","network":"DAZN","status":"ANNOUNCED","images":[],"sources":[{"label":"Matchroom official event page","url":"https://www.matchroomboxing.com/events/marksman-vs-barreto/"}],"fights":["Marksman vs Barreto"]},
-{"id":"boxing-itauma-hrgovic-2026-08-29","sport":"Boxing","promotion":"Queensberry Promotions","title":"Natural Born Thriller","headline":"Moses Itauma vs Filip Hrgovic","date":"2026-08-29","start":null,"timeNote":"Start time TBA","venue":"The O2","location":"London, United Kingdom","network":"DAZN PPV","status":"CONFIRMED","images":["/assets/fighters/moses-itauma.webp","/assets/fighters/filip-hrgovic.webp"],"sources":[{"label":"Queensberry official events","url":"https://queensberry.co.uk/pages/events"}],"fights":["Moses Itauma vs Filip Hrgovic","Sam Noakes vs Denys Berinchyk","Constantin Ursu vs Ben Vaughan","Aloys Junior vs Mike Perez"]},
-{"id":"ufc-paris-2026-09-05","sport":"UFC / MMA","promotion":"UFC","title":"UFC Fight Night Paris","headline":"Main event TBA","date":"2026-09-05","start":"2026-09-05T19:00:00Z","timeNote":"3:00 PM ET main card","venue":"Accor Arena","location":"Paris, France","network":"Paramount+","status":"ANNOUNCED","images":[],"sources":[{"label":"UFC official events schedule","url":"https://www.ufc.com/events"}],"fights":[]},
-{"id":"boxing-ruiz-knyba-2026-09-04","sport":"Boxing","promotion":"Matchroom Boxing","title":"Ruiz Jr. vs Knyba","headline":"Andy Ruiz Jr. vs Damian Knyba","date":"2026-09-04","start":null,"timeNote":"Start time TBA","venue":"Prudential Center","location":"Newark, New Jersey","network":"DAZN","status":"ANNOUNCED","images":[],"sources":[{"label":"Matchroom official schedule","url":"https://www.matchroomboxing.com/events/"}],"fights":["Andy Ruiz Jr. vs Damian Knyba"]},
-{"id":"boxing-taylor-pili-2026-09-05","sport":"Boxing","promotion":"Matchroom Boxing","title":"Taylor vs Pili","headline":"Katie Taylor vs Pili","date":"2026-09-05","start":null,"timeNote":"Start time TBA","venue":"Croke Park","location":"Dublin, Ireland","network":"DAZN","status":"ANNOUNCED","images":[],"sources":[{"label":"Matchroom official schedule","url":"https://www.matchroomboxing.com/events/"}],"fights":["Katie Taylor vs Pili"]},
-{"id":"ufc-glendale-2026-09-12","sport":"UFC / MMA","promotion":"UFC","title":"UFC Fight Night Glendale","headline":"Main event TBA","date":"2026-09-12","start":"2026-09-12T21:00:00Z","timeNote":"5:00 PM ET main card","venue":"Desert Diamond Arena","location":"Glendale, Arizona","network":"Paramount+","status":"ANNOUNCED","images":[],"sources":[{"label":"UFC official events schedule","url":"https://www.ufc.com/events"}],"fights":[]},
-{"id":"boxing-hedges-brown-2026-09-19","sport":"Boxing","promotion":"Matchroom Boxing","title":"Hedges vs Brown","headline":"Hedges vs Brown","date":"2026-09-19","start":null,"timeNote":"Start time TBA","venue":"Co-op Live","location":"Manchester, United Kingdom","network":"DAZN","status":"ANNOUNCED","images":[],"sources":[{"label":"Matchroom official schedule","url":"https://www.matchroomboxing.com/events/"}],"fights":["Hedges vs Brown"]},
-{"id":"boxing-whittaker-wallace-2026-10-03","sport":"Boxing","promotion":"Matchroom Boxing","title":"Whittaker vs Wallace","headline":"Ben Whittaker vs Wallace","date":"2026-10-03","start":null,"timeNote":"Start time TBA","venue":"Utilita Arena","location":"Birmingham, United Kingdom","network":"DAZN","status":"ANNOUNCED","images":[],"sources":[{"label":"Matchroom official schedule","url":"https://www.matchroomboxing.com/events/"}],"fights":["Ben Whittaker vs Wallace"]},
-{"id":"boxing-smith-puello-2026-10-24","sport":"Boxing","promotion":"Matchroom Boxing","title":"Smith vs Puello","headline":"Smith vs Puello","date":"2026-10-24","start":null,"timeNote":"Start time TBA","venue":"Utilita Arena","location":"Sheffield, United Kingdom","network":"DAZN","status":"ANNOUNCED","images":[],"sources":[{"label":"Matchroom official schedule","url":"https://www.matchroomboxing.com/events/"}],"fights":["Smith vs Puello"]}
-]
+{
+ "schemaVersion": 2,
+ "snapshotVerifiedAt": "2026-11-05",
+ "note": "Hand-verified against the cited pages on snapshotVerifiedAt. startLocal is the wall-clock time printed by the official source; ingestion converts it to UTC. Events whose only sources are non-official stay ANNOUNCED. See docs/DATA_SOURCES.md.",
+ "events": [
+  {
+   "id": "ufc-fight-night-cortes-acosta-walker-2026-11-07",
+   "sport": "MMA",
+   "promotion": "UFC",
+   "title": "UFC Fight Night: Cortes Acosta vs Walker",
+   "headline": "Waldo Cortes Acosta vs Johnny Walker",
+   "date": "2026-11-07",
+   "timezone": "America/Los_Angeles",
+   "startLocal": {
+    "date": "2026-11-07",
+    "time": "20:00",
+    "zone": "America/New_York"
+   },
+   "startKind": "main_card",
+   "timeNote": "Main card 8:00 PM ET, prelims 5:00 PM ET (official)",
+   "venue": "Meta APEX",
+   "location": "Las Vegas, NV, USA",
+   "network": "Paramount+",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "statusReason": "Main event changed: Sean Brady withdrew (reported); official page now lists Cortes Acosta vs Walker.",
+   "fights": [
+    {
+     "a": "Waldo Cortes Acosta",
+     "b": "Johnny Walker",
+     "weightClass": "Heavyweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Tatiana Suarez",
+     "b": "Virna Jandiroba",
+     "weightClass": "Women's Strawweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Davey Grant",
+     "b": "Elijah Smith",
+     "weightClass": "Bantamweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Billy Elekana",
+     "b": "Lucas Fernando",
+     "weightClass": "Light Heavyweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Priscila Cachoeira",
+     "b": "Nina Milošević",
+     "weightClass": "Women's Bantamweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Mitch Raposo",
+     "b": "Marcos Degli",
+     "weightClass": "Flyweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Keiichiro Nakamura",
+     "b": "Ollie Schmid",
+     "weightClass": "Featherweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Gabriel Lorenço",
+     "b": "Thomas Petersen",
+     "weightClass": "Heavyweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Karine Silva",
+     "b": "Gabriella Fernandes",
+     "weightClass": "Women's Flyweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Jose Delano",
+     "b": "Murtazali Magomedov",
+     "weightClass": "Featherweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Austin Bashi",
+     "b": "Carlos Calderon",
+     "weightClass": "Featherweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Mantas Kondratavičius",
+     "b": "Andre Petroski",
+     "weightClass": "Middleweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Seokhyeon Ko",
+     "b": "Wellington Turman",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Jonny Parsons",
+     "b": "José Souza",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "segment": "prelim"
+    }
+   ],
+   "sources": [
+    {
+     "label": "UFC official event page",
+     "url": "https://www.ufc.com/event/ufc-fight-night-november-07-2026",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Heavy.com: original main event (Brady vs Bonfim) scrapped",
+     "url": "https://heavy.com/sports/ufc/ufc-vegas-124-main-event-scrapped/",
+     "retrievedAt": "2026-11-05",
+     "official": false
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "ufc-334-2026-11-14",
+   "sport": "MMA",
+   "promotion": "UFC",
+   "title": "UFC 334: Gane vs Hokit",
+   "headline": "Ciryl Gane vs Josh Hokit",
+   "date": "2026-11-14",
+   "timezone": "America/New_York",
+   "startLocal": {
+    "date": "2026-11-14",
+    "time": "21:00",
+    "zone": "America/New_York"
+   },
+   "startKind": "main_card",
+   "timeNote": "Main card 9:00 PM ET, prelims 7:00 PM ET, early prelims 5:00 PM ET (official)",
+   "venue": "Madison Square Garden",
+   "location": "New York, NY, USA",
+   "network": "Paramount+ (early prelims also on UFC Fight Pass)",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Ciryl Gane",
+     "b": "Josh Hokit",
+     "weightClass": "Heavyweight",
+     "titleFight": true,
+     "segment": "main"
+    },
+    {
+     "a": "Kayla Harrison",
+     "b": "Amanda Nunes",
+     "weightClass": "Women's Bantamweight",
+     "titleFight": true,
+     "segment": "main"
+    },
+    {
+     "a": "Caio Borralho",
+     "b": "Yousri Belgaroui",
+     "weightClass": "Middleweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Uroš Medić",
+     "b": "Kevin Holland",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Bilal Hasan",
+     "b": "Luis Gurule",
+     "weightClass": "Flyweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Stephen Thompson",
+     "b": "Charles Radtke",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Drew Dober",
+     "b": "Chris Duncan",
+     "weightClass": "Lightweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Jim Miller",
+     "b": "Terrance McKinney",
+     "weightClass": "Lightweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Donte Johnson",
+     "b": "Cesar Almeida",
+     "weightClass": "Middleweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Jared Gordon",
+     "b": "Melquizael Costa",
+     "weightClass": "Lightweight",
+     "titleFight": false,
+     "segment": "early"
+    },
+    {
+     "a": "Macy Chiasson",
+     "b": "Bia Mesquita",
+     "weightClass": "Women's Bantamweight",
+     "titleFight": false,
+     "segment": "early"
+    },
+    {
+     "a": "Adrian Yanez",
+     "b": "Juan Diaz",
+     "weightClass": "Bantamweight",
+     "titleFight": false,
+     "segment": "early"
+    },
+    {
+     "a": "Evan Elder",
+     "b": "Samuel Sanches",
+     "weightClass": "Lightweight",
+     "titleFight": false,
+     "segment": "early"
+    }
+   ],
+   "sources": [
+    {
+     "label": "UFC official event page",
+     "url": "https://www.ufc.com/event/ufc-334",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "ufc-fight-night-prochazka-stirling-2026-11-21",
+   "sport": "MMA",
+   "promotion": "UFC",
+   "title": "UFC Fight Night: Procházka vs Stirling",
+   "headline": "Jiří Procházka vs Navajo Stirling",
+   "date": "2026-11-21",
+   "timezone": "Asia/Qatar",
+   "startLocal": {
+    "date": "2026-11-21",
+    "time": "13:00",
+    "zone": "America/New_York"
+   },
+   "startKind": "main_card",
+   "timeNote": "Main card 1:00 PM ET / 9:00 PM Doha, prelims 10:00 AM ET (official)",
+   "venue": "ABHA Arena",
+   "location": "Doha, Qatar",
+   "network": "Paramount+",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Jiří Procházka",
+     "b": "Navajo Stirling",
+     "weightClass": "Light Heavyweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Aljamain Sterling",
+     "b": "Kevin Vallejos",
+     "weightClass": "Featherweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Dan Hooker",
+     "b": "Brian Ortega",
+     "weightClass": "Lightweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Kyoji Horiguchi",
+     "b": "Asu Almabayev",
+     "weightClass": "Flyweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Jared Cannonier",
+     "b": "Ikram Aliskerov",
+     "weightClass": "Middleweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Aleksandre Topuria",
+     "b": "Santiago Luna",
+     "weightClass": "Bantamweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Shamil Gaziev",
+     "b": "Tallison Teixeira",
+     "weightClass": "Heavyweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Amir Albazi",
+     "b": "Alessandro Costa",
+     "weightClass": "Flyweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Jake Matthews",
+     "b": "Tahir Abdullayev",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "segment": "prelim"
+    }
+   ],
+   "sources": [
+    {
+     "label": "UFC official event page",
+     "url": "https://www.ufc.com/event/ufc-fight-night-november-21-2026",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "ufc-335-2026-12-12",
+   "sport": "MMA",
+   "promotion": "UFC",
+   "title": "UFC 335: Oliveira vs Lopes",
+   "headline": "Charles Oliveira vs Diego Lopes",
+   "date": "2026-12-12",
+   "timezone": "America/Los_Angeles",
+   "startLocal": {
+    "date": "2026-12-12",
+    "time": "21:00",
+    "zone": "America/New_York"
+   },
+   "startKind": "main_card",
+   "timeNote": "Main card 9:00 PM ET, prelims 7:00 PM ET, early prelims 5:00 PM ET (official); card still being built",
+   "venue": "T-Mobile Arena",
+   "location": "Las Vegas, NV, USA",
+   "network": "Paramount+ (early prelims also on UFC Fight Pass)",
+   "broadcastVerified": true,
+   "status": "ANNOUNCED",
+   "fights": [
+    {
+     "a": "Charles Oliveira",
+     "b": "Diego Lopes",
+     "weightClass": "Lightweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Alex Pereira",
+     "b": "Sergei Pavlovich",
+     "weightClass": "Heavyweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Brandon Moreno",
+     "b": "Charles Johnson",
+     "weightClass": "Flyweight",
+     "titleFight": false
+    },
+    {
+     "a": "Quentin Pasley",
+     "b": "Junior Tafa",
+     "weightClass": "Light Heavyweight",
+     "titleFight": false
+    },
+    {
+     "a": "Joe Pyfer",
+     "b": "Bo Nickal",
+     "weightClass": "Middleweight",
+     "titleFight": false
+    }
+   ],
+   "sources": [
+    {
+     "label": "UFC official event page",
+     "url": "https://www.ufc.com/event/ufc-335",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "ufc-fight-night-dallas-2027-01-16",
+   "sport": "MMA",
+   "promotion": "UFC",
+   "title": "UFC Fight Night: Dallas",
+   "headline": "Main event TBA",
+   "date": "2027-01-16",
+   "timezone": "America/Chicago",
+   "startLocal": {
+    "date": "2027-01-16",
+    "time": "20:00",
+    "zone": "America/New_York"
+   },
+   "startKind": "main_card",
+   "timeNote": "Main card 8:00 PM ET, prelims 5:00 PM ET (official)",
+   "venue": "American Airlines Center",
+   "location": "Dallas, TX, USA",
+   "network": "Paramount+",
+   "broadcastVerified": true,
+   "status": "ANNOUNCED",
+   "fights": [],
+   "sources": [
+    {
+     "label": "UFC official event page",
+     "url": "https://www.ufc.com/event/ufc-fight-night-january-16-2027",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "ufc-336-2027-01-30",
+   "sport": "MMA",
+   "promotion": "UFC",
+   "title": "UFC 336: Van vs Kape",
+   "headline": "Joshua Van vs Manel Kape",
+   "date": "2027-01-30",
+   "timezone": "America/Toronto",
+   "startLocal": {
+    "date": "2027-01-30",
+    "time": "21:00",
+    "zone": "America/New_York"
+   },
+   "startKind": "main_card",
+   "timeNote": "Main card 9:00 PM ET, prelims 7:00 PM ET, early prelims 5:00 PM ET (official); card still being built",
+   "venue": "Scotiabank Arena",
+   "location": "Toronto, ON, Canada",
+   "network": "Paramount+ (early prelims also on UFC Fight Pass)",
+   "broadcastVerified": true,
+   "status": "ANNOUNCED",
+   "fights": [
+    {
+     "a": "Joshua Van",
+     "b": "Manel Kape",
+     "weightClass": "Flyweight",
+     "titleFight": true,
+     "segment": "main"
+    },
+    {
+     "a": "Carlos Prates",
+     "b": "Michael Morales",
+     "weightClass": "Welterweight (interim title)",
+     "titleFight": true,
+     "segment": "main"
+    }
+   ],
+   "sources": [
+    {
+     "label": "UFC official event page",
+     "url": "https://www.ufc.com/event/ufc-336",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "pfl-dubai-2026-11-14",
+   "sport": "MMA",
+   "promotion": "PFL",
+   "title": "PFL Dubai",
+   "headline": "Vadim Nemkov vs Sergei Bilostenniy",
+   "date": "2026-11-14",
+   "timezone": "Asia/Dubai",
+   "startLocal": {
+    "date": "2026-11-14",
+    "time": "22:00",
+    "zone": "Asia/Dubai"
+   },
+   "startKind": "main_card",
+   "timeNote": "Main card 10:00 PM GST / 1:00 PM ET, prelims 6:00 PM GST (official)",
+   "venue": "Coca-Cola Arena",
+   "location": "Dubai, UAE",
+   "network": "ESPN App (US); STARZPLAY (MENA)",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Vadim Nemkov",
+     "b": "Sergei Bilostenniy",
+     "weightClass": "Heavyweight",
+     "titleFight": true,
+     "segment": "main"
+    },
+    {
+     "a": "Patrick Habirora",
+     "b": "Omar El Dafrawy",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Pouya Rahmani",
+     "b": "Oleg Popov",
+     "weightClass": "Heavyweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Abubakar Nurmagomedov",
+     "b": "David Martinez",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Sergio Pettis",
+     "b": "Joji Goto",
+     "weightClass": "Bantamweight",
+     "titleFight": false,
+     "segment": "main"
+    },
+    {
+     "a": "Shem Rock",
+     "b": "Connor Hughes",
+     "weightClass": "Lightweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Lewis McGrillen",
+     "b": "Nawras Abzakh",
+     "weightClass": "Bantamweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Asaël Adjoudj",
+     "b": "Movlid Khaybulaev",
+     "weightClass": "Featherweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Alexei Pergande",
+     "b": "Akhmed Magomedov",
+     "weightClass": "Lightweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Khasan Magomedsharipov",
+     "b": "Adam Borics",
+     "weightClass": "Featherweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Denis Goltsov",
+     "b": "Maxwell Djantou Nana",
+     "weightClass": "Heavyweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Ernesto Rodriguez",
+     "b": "Rhys McKee",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Khabib Nabiev",
+     "b": "Styve Ngono",
+     "weightClass": "Light Heavyweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Khamzat Abaev",
+     "b": "Leon Hill",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "segment": "prelim"
+    },
+    {
+     "a": "Aleksandra Savicheva",
+     "b": "Jacinta Austin",
+     "weightClass": "Women's Strawweight",
+     "titleFight": false,
+     "segment": "prelim"
+    }
+   ],
+   "sources": [
+    {
+     "label": "PFL official event page",
+     "url": "https://pflmma.com/event/pfl-returns-to-dubai",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "PFL official full-card release",
+     "url": "https://pflmma.com/news/pfl-dubai-full-card-confirmed-for-november-14-at-cocacola-arena",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "pfl-khobar-2026-12-11",
+   "sport": "MMA",
+   "promotion": "PFL",
+   "title": "PFL MENA 12: Khobar (2026 Finals)",
+   "headline": "Main event TBA",
+   "date": "2026-12-11",
+   "timezone": "Asia/Riyadh",
+   "timeNote": "Start time TBA (official page lists a placeholder time)",
+   "venue": "Dhahran Expo",
+   "location": "Khobar, Saudi Arabia",
+   "network": "Starzplay",
+   "broadcastVerified": true,
+   "status": "ANNOUNCED",
+   "fights": [],
+   "sources": [
+    {
+     "label": "PFL official event page",
+     "url": "https://pflmma.com/event/pflmena-12",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "pfl-africa-kigali-2026-12-12",
+   "sport": "MMA",
+   "promotion": "PFL",
+   "title": "PFL Africa: Kigali",
+   "headline": "Main event TBA",
+   "date": "2026-12-12",
+   "timezone": "Africa/Kigali",
+   "timeNote": "Start time TBA (official page lists a placeholder time)",
+   "venue": "BK Arena",
+   "location": "Kigali, Rwanda",
+   "network": "TBA",
+   "broadcastVerified": false,
+   "status": "ANNOUNCED",
+   "fights": [],
+   "sources": [
+    {
+     "label": "PFL official event page",
+     "url": "https://pflmma.com/event/pfl-africa-kigali-2026",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "pfl-lyon-2026-12-19",
+   "sport": "MMA",
+   "promotion": "PFL",
+   "title": "PFL Lyon",
+   "headline": "Taylor Lapilus vs Mitch McKee",
+   "date": "2026-12-19",
+   "timezone": "Europe/Paris",
+   "startLocal": {
+    "date": "2026-12-19",
+    "time": "21:00",
+    "zone": "Europe/Paris"
+   },
+   "startKind": "main_card",
+   "timeNote": "Main card 9:00 PM CET / 3:00 PM ET (official)",
+   "venue": "LDLC Arena",
+   "location": "Lyon-Décines, France",
+   "network": "ESPN App (US); RMC Sport (France)",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Taylor Lapilus",
+     "b": "Mitch McKee",
+     "weightClass": "Bantamweight",
+     "titleFight": true,
+     "segment": "main"
+    }
+   ],
+   "sources": [
+    {
+     "label": "PFL official event page",
+     "url": "https://pflmma.com/event/pfl-lyon-2026",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "PFL official press release",
+     "url": "https://pflmma.com/news/history-on-the-line-in-lyon-as-taylor-lapilus-and-mitch-mckee-battle-for-inaugural-pfl-bantamweight-world-title",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-buatsi-hutchinson-2026-11-07",
+   "sport": "Boxing",
+   "promotion": "Queensberry Promotions",
+   "title": "A Point 2 Prove: Buatsi vs Hutchinson",
+   "headline": "Joshua Buatsi vs Willy Hutchinson",
+   "date": "2026-11-07",
+   "timezone": "Europe/London",
+   "timeNote": "Start time TBA",
+   "venue": "AO Arena",
+   "location": "Manchester, England, UK",
+   "network": "DAZN",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Joshua Buatsi",
+     "b": "Willy Hutchinson",
+     "weightClass": "Light Heavyweight",
+     "titleFight": true,
+     "note": "Queensberry pages differ on whether the WBC title is interim or full"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Queensberry events",
+     "url": "https://www.queensberry.co.uk/pages/events",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Queensberry: Buatsi v Hutchinson booked for November 7",
+     "url": "https://www.queensberry.co.uk/blogs/queensberry-promotions-blog/buatsi-v-hutchinson-booked-in-for-november-7",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-billam-smith-clarke-2026-11-07",
+   "sport": "Boxing",
+   "promotion": "Zuffa Boxing",
+   "title": "Zuffa Boxing 12: Billam-Smith vs Clarke",
+   "headline": "Chris Billam-Smith vs Chev Clarke",
+   "date": "2026-11-07",
+   "timezone": "Europe/London",
+   "timeNote": "Start time TBA (unofficial reports conflict)",
+   "venue": "Copper Box Arena",
+   "location": "London, England, UK",
+   "network": "Paramount+ / Sky Sports",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Chris Billam-Smith",
+     "b": "Chev Clarke",
+     "weightClass": "Cruiserweight",
+     "titleFight": false,
+     "rounds": 10
+    },
+    {
+     "a": "Denzel Bentley",
+     "b": "Shane Mosley Jr.",
+     "weightClass": "Middleweight",
+     "titleFight": false,
+     "rounds": 10
+    },
+    {
+     "a": "Da'Mazion Vanhouter",
+     "b": "Ivan Balaz",
+     "weightClass": "Heavyweight",
+     "titleFight": false,
+     "rounds": 8
+    },
+    {
+     "a": "Sam Hickey",
+     "b": "Amaury Massenaux",
+     "weightClass": "Middleweight",
+     "titleFight": false,
+     "rounds": 8,
+     "note": "ESPN (Nov 5) lists Troy Coleman as opponent; official card not yet updated"
+    },
+    {
+     "a": "Kayla Allen",
+     "b": "Julia Igel",
+     "weightClass": "Super Lightweight",
+     "titleFight": false,
+     "rounds": 6
+    },
+    {
+     "a": "Lucas Roehrig",
+     "b": "Connal McDonald",
+     "weightClass": "Cruiserweight",
+     "titleFight": false,
+     "rounds": 8
+    },
+    {
+     "a": "Zach Parker",
+     "b": "Umar Dzambekov",
+     "weightClass": "Light Heavyweight",
+     "titleFight": false,
+     "rounds": 10
+    },
+    {
+     "a": "Vinnie Kemp",
+     "b": "Liam McElhinney",
+     "weightClass": "Middleweight",
+     "titleFight": false,
+     "rounds": 4
+    },
+    {
+     "a": "Masood Abdullah",
+     "b": "Adan Palma",
+     "weightClass": "Featherweight",
+     "titleFight": false,
+     "rounds": 8
+    }
+   ],
+   "sources": [
+    {
+     "label": "UFC.com: Zuffa Boxing 12 official fight card",
+     "url": "https://www.ufc.com/news/zuffa-boxing-12-official-fight-card",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-perez-rivera-2026-11-07",
+   "sport": "Boxing",
+   "promotion": "TBA",
+   "title": "Perez vs Rivera",
+   "headline": "Abraham Perez vs Yankiel Rivera",
+   "date": "2026-11-07",
+   "timezone": "America/Denver",
+   "timeNote": "Start time TBA",
+   "venue": "Venue TBA",
+   "location": "Albuquerque, New Mexico, USA",
+   "network": "DAZN",
+   "broadcastVerified": false,
+   "status": "ANNOUNCED",
+   "fights": [
+    {
+     "a": "Abraham Perez",
+     "b": "Yankiel Rivera",
+     "weightClass": "Flyweight",
+     "titleFight": true,
+     "rounds": 12
+    },
+    {
+     "a": "Pedro Taduran",
+     "b": "Brandon Moreno",
+     "weightClass": "Strawweight",
+     "titleFight": true,
+     "rounds": 12
+    },
+    {
+     "a": "Atif Oberlton",
+     "b": "Deon Nicholson",
+     "weightClass": "Light Heavyweight",
+     "titleFight": false,
+     "rounds": 10
+    }
+   ],
+   "sources": [
+    {
+     "label": "ESPN boxing schedule (not a promoter source)",
+     "url": "https://www.espn.com/boxing/story/_/id/12508267/boxing-schedule",
+     "retrievedAt": "2026-11-05",
+     "official": false
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-turhan-baumgardner-2026-11-08",
+   "sport": "Boxing",
+   "promotion": "Most Valuable Promotions",
+   "title": "MVPW-07: Turhan vs Baumgardner",
+   "headline": "Elif Nur Turhan vs Alycia Baumgardner",
+   "date": "2026-11-08",
+   "timezone": "America/Chicago",
+   "startLocal": {
+    "date": "2026-11-08",
+    "time": "20:30",
+    "zone": "America/New_York"
+   },
+   "startKind": "main_card",
+   "timeNote": "Main card 8:30 PM ET / 7:30 PM CT, prelims 5:15 PM ET (official)",
+   "venue": "College Park Center",
+   "location": "Arlington, Texas, USA",
+   "network": "ESPN / ESPN Deportes (US), Sky Sports (UK); prelims on ESPN App",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Elif Nur Turhan",
+     "b": "Alycia Baumgardner",
+     "weightClass": "Lightweight",
+     "titleFight": true,
+     "rounds": 10
+    },
+    {
+     "a": "Ramla Ali",
+     "b": "Mikiah Kreps",
+     "weightClass": "Super Bantamweight",
+     "titleFight": true,
+     "rounds": 10
+    },
+    {
+     "a": "Skye Nicolson",
+     "b": "Miyo Yoshida",
+     "weightClass": "Super Bantamweight",
+     "titleFight": true,
+     "rounds": 10
+    },
+    {
+     "a": "Irma Garcia",
+     "b": "Nataly Delgado",
+     "weightClass": "Super Flyweight",
+     "titleFight": true,
+     "rounds": 10
+    },
+    {
+     "a": "Albina Moldazhanova",
+     "b": "Kirstie Bavington",
+     "weightClass": "Super Lightweight",
+     "titleFight": false
+    },
+    {
+     "a": "Brittany Sims",
+     "b": "Shera Mae Patricio",
+     "weightClass": "Bantamweight",
+     "titleFight": true,
+     "rounds": 10
+    },
+    {
+     "a": "Fernando Garcia",
+     "b": "Alexander Castellano",
+     "weightClass": "Featherweight",
+     "titleFight": false,
+     "rounds": 6
+    },
+    {
+     "a": "Natalie Dove",
+     "b": "Nayeli Rodriguez",
+     "weightClass": "Flyweight",
+     "titleFight": false,
+     "rounds": 8
+    },
+    {
+     "a": "Javier Guerrero",
+     "b": "Aiden Anderson",
+     "weightClass": "Welterweight",
+     "titleFight": false
+    },
+    {
+     "a": "Jocelyn Camarillo",
+     "b": "Nazarena Serra",
+     "weightClass": "Minimumweight",
+     "titleFight": false
+    }
+   ],
+   "sources": [
+    {
+     "label": "MVP event page",
+     "url": "https://www.mostvaluablepromotions.com/event/mvpw-07-turhan-vs-baumgardner/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "MVP: fight week schedule",
+     "url": "https://www.mostvaluablepromotions.com/mvpw-07-fight-week-schedule-turhan-vs-baumgardner/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "MVP & ESPN announce full card",
+     "url": "https://www.mostvaluablepromotions.com/mvp-espn-announce-full-mvpw-07-fight-card-nov-8/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-adames-warburton-2026-11-14",
+   "sport": "Boxing",
+   "promotion": "Zuffa Boxing",
+   "title": "Riyadh Season Zuffa Boxing 13: Adames vs Warburton",
+   "headline": "Carlos Adames vs Gerome Warburton",
+   "date": "2026-11-14",
+   "timezone": "Asia/Riyadh",
+   "timeNote": "Start time TBA",
+   "venue": "The Venue",
+   "location": "Riyadh, Saudi Arabia",
+   "network": "Paramount+ (US/Canada), Sky Sports (UK/Ireland)",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Carlos Adames",
+     "b": "Gerome Warburton",
+     "weightClass": "Catchweight 165 lb",
+     "titleFight": false,
+     "rounds": 10
+    },
+    {
+     "a": "Jason Moloney",
+     "b": "Andres Teran",
+     "weightClass": "Bantamweight",
+     "titleFight": false,
+     "rounds": 10
+    },
+    {
+     "a": "Bruno Surace",
+     "b": "Kamil Bednarek",
+     "weightClass": "Super Middleweight",
+     "titleFight": false,
+     "rounds": 10
+    },
+    {
+     "a": "Ivan Ortiz",
+     "b": "Dariial Kuchmenov",
+     "weightClass": "Lightweight",
+     "titleFight": false,
+     "rounds": 8
+    },
+    {
+     "a": "Radzhab Butaev",
+     "b": "Alexander Castro",
+     "weightClass": "Middleweight",
+     "titleFight": false,
+     "rounds": 10
+    }
+   ],
+   "sources": [
+    {
+     "label": "UFC.com: Adames vs Warburton headlines Zuffa Boxing 13",
+     "url": "https://www.ufc.com/news/november-14-carlos-adames-battles-gerome-warburton-riyadh-season-zuffa-boxing-13-main-event",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-pacheco-fulghum-2026-11-14",
+   "sport": "Boxing",
+   "promotion": "Matchroom Boxing",
+   "title": "Pacheco vs Fulghum",
+   "headline": "Diego Pacheco vs Darius Fulghum",
+   "date": "2026-11-14",
+   "timezone": "America/Los_Angeles",
+   "timeNote": "Start time TBA",
+   "venue": "Dignity Health Sports Park",
+   "location": "Carson, California, USA",
+   "network": "TNT / truTV / DAZN (US); DAZN worldwide",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Diego Pacheco",
+     "b": "Darius Fulghum",
+     "weightClass": "Super Middleweight",
+     "titleFight": false
+    },
+    {
+     "a": "Anthony Olascuaga",
+     "b": "Yuberjen Martinez",
+     "weightClass": "Flyweight",
+     "titleFight": true
+    },
+    {
+     "a": "Charlie Sheehy",
+     "b": "Gabe Flores"
+    },
+    {
+     "a": "David Adeleye",
+     "b": "Alexander Flores",
+     "weightClass": "Heavyweight",
+     "titleFight": false,
+     "rounds": 10
+    }
+   ],
+   "sources": [
+    {
+     "label": "Matchroom event page",
+     "url": "https://www.matchroomboxing.com/events/pacheco-vs-fulghum/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Matchroom: Pacheco and Fulghum clash in Carson",
+     "url": "https://www.matchroomboxing.com/news/pacheco-and-fulghum-clash-in-carson-on-nov-14-live-on-tnt-and-dazn/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Matchroom: Olascuaga defends vs Martinez",
+     "url": "https://www.matchroomboxing.com/news/olascuaga-pens-multi-fight-deal-with-matchroom-and-defends-world-title-against-two-time-olympian-yuberjen-martinez-on-nov-14-in-carson-ca/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-teremoana-ahio-2026-11-18",
+   "sport": "Boxing",
+   "promotion": "Matchroom Boxing",
+   "title": "Teremoana vs Ahio",
+   "headline": "Teremoana Teremoana vs Hemi Ahio",
+   "date": "2026-11-18",
+   "timezone": "Australia/Melbourne",
+   "timeNote": "Start time TBA",
+   "venue": "Pullman Melbourne Albert Park",
+   "location": "Melbourne, Victoria, Australia",
+   "network": "Fox Sports / Kayo Sports (Australia)",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Teremoana Teremoana",
+     "b": "Hemi Ahio",
+     "weightClass": "Heavyweight",
+     "titleFight": false
+    },
+    {
+     "a": "Joel Camilleri",
+     "b": "Mitch Leek",
+     "weightClass": "Middleweight",
+     "titleFight": false
+    },
+    {
+     "a": "Omar El-Abdallah",
+     "b": "Lilo Telepe",
+     "weightClass": "Middleweight",
+     "titleFight": false
+    }
+   ],
+   "sources": [
+    {
+     "label": "Matchroom event page",
+     "url": "https://www.matchroomboxing.com/events/teremoana-vs-ahio/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Matchroom: Teremoana meets Ahio in Melbourne",
+     "url": "https://www.matchroomboxing.com/news/heavyweight-superstar-teremoana-teremoana-meets-dangerous-hemi-ahio-in-melbourne-as-matchroom-boxing-returns-to-australia-on-wednesday-november-18-live-on-fox-sports/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-price-kotaskova-2026-11-20",
+   "sport": "Boxing",
+   "promotion": "TBA",
+   "title": "Price vs Kotaskova",
+   "headline": "Lauren Price vs Michaela Kotaskova",
+   "date": "2026-11-20",
+   "timezone": "Europe/London",
+   "timeNote": "Start time TBA",
+   "venue": "Venue TBA",
+   "location": "Cardiff, Wales, UK",
+   "network": "TBA",
+   "broadcastVerified": false,
+   "status": "ANNOUNCED",
+   "fights": [
+    {
+     "a": "Lauren Price",
+     "b": "Michaela Kotaskova",
+     "weightClass": "Welterweight",
+     "titleFight": true,
+     "rounds": 10
+    }
+   ],
+   "sources": [
+    {
+     "label": "ESPN boxing schedule (not a promoter source)",
+     "url": "https://www.espn.com/boxing/story/_/id/12508267/boxing-schedule",
+     "retrievedAt": "2026-11-05",
+     "official": false
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-jones-pettus-2026-11-20",
+   "sport": "Boxing",
+   "promotion": "Golden Boy Promotions",
+   "title": "Jones vs Pettus",
+   "headline": "Amari Jones vs DeAundre Pettus",
+   "date": "2026-11-20",
+   "timezone": "America/Los_Angeles",
+   "timeNote": "Start time TBA",
+   "venue": "Fantasy Springs Resort Casino",
+   "location": "Indio, California, USA",
+   "network": "DAZN",
+   "broadcastVerified": false,
+   "status": "ANNOUNCED",
+   "fights": [
+    {
+     "a": "Amari Jones",
+     "b": "DeAundre Pettus",
+     "weightClass": "Middleweight",
+     "titleFight": false,
+     "rounds": 10
+    },
+    {
+     "a": "Gabriela Fundora",
+     "b": "Jasmina Zapotoczna",
+     "weightClass": "Flyweight",
+     "titleFight": true,
+     "rounds": 10
+    }
+   ],
+   "sources": [
+    {
+     "label": "FightMag: Amari Jones faces DeAundre Pettus in Indio",
+     "url": "https://www.fightmag.com/amari-jones-faces-deaundre-pettus-in-indio-in-november/",
+     "retrievedAt": "2026-11-05",
+     "official": false
+    },
+    {
+     "label": "ESPN boxing schedule (not a promoter source)",
+     "url": "https://www.espn.com/boxing/story/_/id/12508267/boxing-schedule",
+     "retrievedAt": "2026-11-05",
+     "official": false
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-kabayel-hysa-2026-11-28",
+   "sport": "Boxing",
+   "promotion": "Queensberry Promotions",
+   "title": "Bad Blood: Kabayel vs Hysa",
+   "headline": "Agit Kabayel vs Nelson Hysa",
+   "date": "2026-11-28",
+   "timezone": "Europe/Berlin",
+   "timeNote": "Start time TBA",
+   "venue": "Merkur Spiel-Arena",
+   "location": "Düsseldorf, Germany",
+   "network": "DAZN",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Agit Kabayel",
+     "b": "Nelson Hysa",
+     "weightClass": "Heavyweight",
+     "titleFight": true
+    }
+   ],
+   "sources": [
+    {
+     "label": "Queensberry events",
+     "url": "https://www.queensberry.co.uk/pages/events",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Queensberry: Kabayel v Hysa booked",
+     "url": "https://www.queensberry.co.uk/blogs/queensberry-promotions-blog/kabayel-v-hysa-booked-for-world-title-showdown-in-dusseldorf-live-on-dazn",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-jimenez-akui-2026-11-29",
+   "sport": "Boxing",
+   "promotion": "TBA",
+   "title": "Tokyo world title triple-header",
+   "headline": "David Jimenez vs Seigo Yuri Akui",
+   "date": "2026-11-29",
+   "timezone": "Asia/Tokyo",
+   "timeNote": "Start time TBA",
+   "venue": "Venue TBA",
+   "location": "Tokyo, Japan",
+   "network": "TBA",
+   "broadcastVerified": false,
+   "status": "ANNOUNCED",
+   "fights": [
+    {
+     "a": "David Jimenez",
+     "b": "Seigo Yuri Akui",
+     "weightClass": "Super Flyweight",
+     "titleFight": true,
+     "rounds": 12
+    },
+    {
+     "a": "Riku Masuda",
+     "b": "Seiya Tsutsumi",
+     "weightClass": "Bantamweight",
+     "titleFight": true,
+     "rounds": 12
+    },
+    {
+     "a": "Kenshiro Teraji",
+     "b": "Jassiel Ramon Amador Gamez",
+     "weightClass": "Super Flyweight",
+     "titleFight": true,
+     "rounds": 12
+    }
+   ],
+   "sources": [
+    {
+     "label": "ESPN boxing schedule (not a promoter source)",
+     "url": "https://www.espn.com/boxing/story/_/id/12508267/boxing-schedule",
+     "retrievedAt": "2026-11-05",
+     "official": false
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-benavidez-cieslak-2026-12-05",
+   "sport": "Boxing",
+   "promotion": "Premier Boxing Champions",
+   "title": "Benavidez vs Cieslak",
+   "headline": "David Benavidez vs Michal Cieslak",
+   "date": "2026-12-05",
+   "timezone": "America/Phoenix",
+   "timeNote": "Start time TBA (unofficially reported 8 PM ET)",
+   "venue": "Desert Diamond Arena",
+   "location": "Glendale, Arizona, USA",
+   "network": "DAZN / Prime Video PPV",
+   "broadcastVerified": false,
+   "status": "ANNOUNCED",
+   "fights": [
+    {
+     "a": "David Benavidez",
+     "b": "Michal Cieslak",
+     "weightClass": "Cruiserweight",
+     "titleFight": true,
+     "rounds": 12
+    },
+    {
+     "a": "Vergil Ortiz Jr.",
+     "b": "Keith Thurman",
+     "weightClass": "Middleweight",
+     "titleFight": false,
+     "rounds": 12
+    }
+   ],
+   "sources": [
+    {
+     "label": "FightMag: Benavidez vs Cieslak confirmed",
+     "url": "https://www.fightmag.com/benavidez-vs-cieslak-confirmed-for-december-in-glendale-arizona/",
+     "retrievedAt": "2026-11-05",
+     "official": false
+    },
+    {
+     "label": "ESPN boxing schedule (not a promoter source)",
+     "url": "https://www.espn.com/boxing/story/_/id/12508267/boxing-schedule",
+     "retrievedAt": "2026-11-05",
+     "official": false
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-walker-rocha-2026-12-05",
+   "sport": "Boxing",
+   "promotion": "Matchroom Boxing",
+   "title": "Walker vs Rocha",
+   "headline": "Conah Walker vs Alexis Rocha",
+   "date": "2026-12-05",
+   "timezone": "Europe/London",
+   "timeNote": "Start time TBA",
+   "venue": "Civic Hall (The Halls Wolverhampton)",
+   "location": "Wolverhampton, England, UK",
+   "network": "DAZN",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Conah Walker",
+     "b": "Alexis Rocha",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "note": "WBA world title eliminator"
+    },
+    {
+     "a": "Tiah Mai Ayton",
+     "b": "Tori-Ellis Willetts"
+    },
+    {
+     "a": "William Crolla",
+     "b": "Billy Stanbury"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Matchroom event page",
+     "url": "https://www.matchroomboxing.com/events/walker-vs-rocha/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Matchroom: Walker returns to Wolverhampton",
+     "url": "https://www.matchroomboxing.com/news/09-10-2026-155739-scott-all-good-09-10-2026-155759-scott-hammerton-conah-walker-returns-to-wolverhampton-in-wba-world-title-eliminator-against-alexis-rocha-on-december-5-live-on/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-fury-joshua-2026-12-11",
+   "sport": "Boxing",
+   "promotion": "Riyadh Season / The Ring (Matchroom & Queensberry)",
+   "title": "Fury vs Joshua",
+   "headline": "Tyson Fury vs Anthony Joshua",
+   "date": "2026-12-11",
+   "timezone": "Europe/London",
+   "timeNote": "Start time TBA (ring walks reported ~1 AM UK Sat Dec 12, unofficial)",
+   "venue": "Principality Stadium",
+   "location": "Cardiff, Wales, UK",
+   "network": "Netflix",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Tyson Fury",
+     "b": "Anthony Joshua",
+     "weightClass": "Heavyweight",
+     "titleFight": true
+    },
+    {
+     "a": "Deontay Wilder",
+     "b": "Jai Opetaia",
+     "weightClass": "Heavyweight"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Netflix Tudum: Fury vs Joshua, Wilder vs Opetaia added",
+     "url": "https://www.netflix.com/tudum/features/tyson-fury-anthony-joshua-live-on-netflix",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Matchroom event page",
+     "url": "https://www.matchroomboxing.com/events/fury-vs-joshua/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Queensberry: Fury v Joshua set for Cardiff",
+     "url": "https://www.queensberry.co.uk/blogs/queensberry-promotions-blog/fury-v-joshua-set-for-cardiff-on-december-11",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-bivol-smith-2026-12-12",
+   "sport": "Boxing",
+   "promotion": "Matchroom Boxing",
+   "title": "Bivol vs Smith",
+   "headline": "Dmitry Bivol vs Callum Smith",
+   "date": "2026-12-12",
+   "timezone": "Asia/Yekaterinburg",
+   "timeNote": "Start time TBA",
+   "venue": "UMMC Arena",
+   "location": "Yekaterinburg, Russia",
+   "network": "TBA",
+   "broadcastVerified": false,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Dmitry Bivol",
+     "b": "Callum Smith",
+     "weightClass": "Light Heavyweight",
+     "titleFight": true
+    }
+   ],
+   "sources": [
+    {
+     "label": "Matchroom event page",
+     "url": "https://www.matchroomboxing.com/events/bivol-vs-smith/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Reuters via The Star",
+     "url": "https://www.thestar.com.my/sport/boxing/2026/10/13/boxing-bivol-to-defend-light-heavy-titles-against-britain039s-smith-in-russia-on-dec-12",
+     "retrievedAt": "2026-11-05",
+     "official": false
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-monte-carlo-showdown-vii-2026-12-12",
+   "sport": "Boxing",
+   "promotion": "Matchroom Boxing",
+   "title": "Monte-Carlo Showdown VII",
+   "headline": "Michel Soro vs George Liddard",
+   "date": "2026-12-12",
+   "timezone": "Europe/Monaco",
+   "timeNote": "Start time TBA",
+   "venue": "Salle des Étoiles, Sporting Monte-Carlo",
+   "location": "Monte Carlo, Monaco",
+   "network": "DAZN",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Michel Soro",
+     "b": "George Liddard"
+    },
+    {
+     "a": "Josh Padley",
+     "b": "Moussa Gholam"
+    },
+    {
+     "a": "Ishmael Davis",
+     "b": "Junaid Bostan"
+    },
+    {
+     "a": "Leo Atang",
+     "b": "Mateus Munhoz De Penha"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Matchroom event page",
+     "url": "https://www.matchroomboxing.com/events/monte-carlo-showdown-vii/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Matchroom: Monte Carlo Showdown VII date confirmed",
+     "url": "https://www.matchroomboxing.com/news/monte-carlo-showdown-vii-date-confirmed/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-tszyu-lara-2026-12-13",
+   "sport": "Boxing",
+   "promotion": "No Limit Boxing / TGB Promotions",
+   "title": "Tszyu vs Lara",
+   "headline": "Tim Tszyu vs Erislandy Lara",
+   "date": "2026-12-13",
+   "timezone": "Australia/Brisbane",
+   "startLocal": {
+    "date": "2026-12-13",
+    "time": "09:30",
+    "zone": "Australia/Brisbane"
+   },
+   "startKind": "main_card",
+   "timeNote": "Main event broadcast from 9:30 AM AEST Sun Dec 13 (Sat evening in the US), prelims 7:30 AM AEST (official)",
+   "venue": "Cbus Super Stadium",
+   "location": "Gold Coast, Queensland, Australia",
+   "network": "Kayo Sports / Fox Sports (Australia)",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Tim Tszyu",
+     "b": "Erislandy Lara",
+     "weightClass": "Middleweight",
+     "titleFight": true
+    },
+    {
+     "a": "Jermell Charlo",
+     "b": "Brock Jarvis",
+     "weightClass": "Super Middleweight",
+     "titleFight": false
+    },
+    {
+     "a": "Liam Wilson",
+     "b": "Elnur Samedov",
+     "weightClass": "Super Featherweight",
+     "titleFight": true
+    }
+   ],
+   "sources": [
+    {
+     "label": "No Limit Boxing event page",
+     "url": "https://nolimitboxing.com.au/events/tim-tszyu-vs-erislandy-lara",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-haney-paro-2026-12-19",
+   "sport": "Boxing",
+   "promotion": "Top Rank",
+   "title": "Haney vs Paro",
+   "headline": "Devin Haney vs Liam Paro",
+   "date": "2026-12-19",
+   "timezone": "America/Los_Angeles",
+   "startLocal": {
+    "date": "2026-12-19",
+    "time": "20:00",
+    "zone": "America/New_York"
+   },
+   "startKind": "main_card",
+   "timeNote": "DAZN PPV from 8:00 PM ET / 5:00 PM PT (official)",
+   "venue": "Chase Center",
+   "location": "San Francisco, California, USA",
+   "network": "DAZN PPV",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Devin Haney",
+     "b": "Liam Paro",
+     "weightClass": "Welterweight",
+     "titleFight": true,
+     "note": "WBO vs IBF unification"
+    },
+    {
+     "a": "Brian Norman Jr.",
+     "b": "Abel Ramos",
+     "weightClass": "Welterweight",
+     "titleFight": false,
+     "rounds": 10
+    }
+   ],
+   "sources": [
+    {
+     "label": "Top Rank: Haney-Paro confirmed for Dec. 19",
+     "url": "https://www.toprank.com/news/devin-haney-liam-paro-welterweight-unification-battle-confirmed-for-dec-19-at-chase-center-in-san-francisco",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Top Rank event page",
+     "url": "https://toprank.com/events/haney-vs-paro",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-cacace-ball-2026-12-19",
+   "sport": "Boxing",
+   "promotion": "Queensberry Promotions",
+   "title": "Weight For It: Cacace vs Ball",
+   "headline": "Anthony Cacace vs Nick Ball",
+   "date": "2026-12-19",
+   "timezone": "Europe/London",
+   "timeNote": "Start time TBA",
+   "venue": "SSE Arena",
+   "location": "Belfast, Northern Ireland, UK",
+   "network": "DAZN",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Anthony Cacace",
+     "b": "Nick Ball",
+     "weightClass": "Super Featherweight",
+     "titleFight": true
+    }
+   ],
+   "sources": [
+    {
+     "label": "Queensberry events",
+     "url": "https://www.queensberry.co.uk/pages/events",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-paul-doumbe-2026-12-24",
+   "sport": "Boxing",
+   "promotion": "Most Valuable Promotions",
+   "title": "Paul vs Doumbé",
+   "headline": "Jake Paul vs Cédric Doumbé",
+   "date": "2026-12-24",
+   "timezone": "Asia/Dubai",
+   "timeNote": "Start time TBA (official page shows a time without a time zone)",
+   "venue": "Coca-Cola Arena",
+   "location": "Dubai, UAE",
+   "network": "TBA",
+   "broadcastVerified": false,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Jake Paul",
+     "b": "Cédric Doumbé",
+     "weightClass": "Cruiserweight (200 lb)",
+     "titleFight": false,
+     "rounds": 8
+    }
+   ],
+   "sources": [
+    {
+     "label": "MVP event page",
+     "url": "https://www.mostvaluablepromotions.com/event/paul-vs-doumbe/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "MVP: Jake Paul to face Cédric Doumbé",
+     "url": "https://www.mostvaluablepromotions.com/jake-paul-vs-cedric-doumbe-dubai-christmas-eve/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-serrano-falzon-2027-01-09",
+   "sport": "Boxing",
+   "promotion": "Most Valuable Promotions",
+   "title": "The Last Walk: Serrano vs Falzon",
+   "headline": "Amanda Serrano vs Skye Falzon",
+   "date": "2027-01-09",
+   "timezone": "America/Puerto_Rico",
+   "timeNote": "Start time TBA (official page shows a time without a time zone)",
+   "venue": "Coliseo de Puerto Rico",
+   "location": "San Juan, Puerto Rico",
+   "network": "DAZN",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Amanda Serrano",
+     "b": "Skye Falzon",
+     "weightClass": "Featherweight",
+     "titleFight": true,
+     "rounds": 12
+    }
+   ],
+   "sources": [
+    {
+     "label": "MVP event page",
+     "url": "https://www.mostvaluablepromotions.com/event/serrano-vs-falzon/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "MVP: The Last Walk set for January 9",
+     "url": "https://www.mostvaluablepromotions.com/amanda-serrano-vs-skye-falzon-the-last-walk-january-9/",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-garner-dickens-2027-01-09",
+   "sport": "Boxing",
+   "promotion": "Queensberry Promotions",
+   "title": "Coastal Chaos: Garner vs Dickens",
+   "headline": "Ryan Garner vs Jazza Dickens",
+   "date": "2027-01-09",
+   "timezone": "Europe/London",
+   "timeNote": "Start time TBA",
+   "venue": "Bournemouth International Centre",
+   "location": "Bournemouth, England, UK",
+   "network": "DAZN",
+   "broadcastVerified": true,
+   "status": "CONFIRMED",
+   "fights": [
+    {
+     "a": "Ryan Garner",
+     "b": "Jazza Dickens",
+     "weightClass": "Super Featherweight",
+     "titleFight": true
+    }
+   ],
+   "sources": [
+    {
+     "label": "Queensberry events",
+     "url": "https://www.queensberry.co.uk/pages/events",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    },
+    {
+     "label": "Queensberry: Coastal Chaos for Garner and Dickens",
+     "url": "https://www.queensberry.co.uk/blogs/queensberry-promotions-blog/coastal-chaos-for-garner-and-dickens",
+     "retrievedAt": "2026-11-05",
+     "official": true
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  },
+  {
+   "id": "boxing-bank-alimkhanuly-2027-01-23",
+   "sport": "Boxing",
+   "promotion": "TBA",
+   "title": "Bank vs Alimkhanuly",
+   "headline": "Jacob Bank vs Zhanibek Alimkhanuly",
+   "date": "2027-01-23",
+   "timezone": "Europe/Copenhagen",
+   "timeNote": "Start time TBA",
+   "venue": "Venue TBA",
+   "location": "Horsens, Denmark",
+   "network": "TBA",
+   "broadcastVerified": false,
+   "status": "ANNOUNCED",
+   "fights": [
+    {
+     "a": "Jacob Bank",
+     "b": "Zhanibek Alimkhanuly",
+     "weightClass": "Super Middleweight",
+     "titleFight": true,
+     "rounds": 12
+    }
+   ],
+   "sources": [
+    {
+     "label": "ESPN boxing schedule (not a promoter source)",
+     "url": "https://www.espn.com/boxing/story/_/id/12508267/boxing-schedule",
+     "retrievedAt": "2026-11-05",
+     "official": false
+    }
+   ],
+   "verifiedAt": "2026-11-05"
+  }
+ ]
+}

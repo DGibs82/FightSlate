@@ -1,1 +1,37 @@
-<!doctype html><html><body style="font-family:system-ui;background:#090d13;color:white;padding:30px"><h1>FightSlate Admin</h1><p>Use the Render dashboard for cron history and logs. Manual controls:</p><input id="token" placeholder="Admin token" style="padding:10px;width:320px"><p><button onclick="run('/internal/seed')">Refresh seed</button> <button onclick="run('/internal/notify/new')">Send new-fight alerts</button> <button onclick="run('/internal/notify/upcoming')">Send reminders</button></p><pre id="out"></pre><script>async function run(url){const r=await fetch(url,{method:'POST',headers:{Authorization:'Bearer '+token.value}});out.textContent=await r.text()}</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>FightSlate Admin</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    table { width: 100%; border-collapse: collapse; font-size: .84rem; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--muted); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; }
+    .scroll { overflow-x: auto; }
+    .ok { color: var(--green); } .bad { color: var(--red); } .warn { color: var(--gold); }
+    .grid4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin: 16px 0; }
+    .stat strong { font-size: 1.3rem; display: block; }
+    pre { white-space: pre-wrap; font-size: .8rem; color: var(--muted); max-height: 300px; overflow: auto; }
+  </style>
+  <script type="module" src="/admin.js"></script>
+</head>
+<body>
+  <header class="topbar"><div class="shell nav"><a class="brand" href="/"><span class="brand-mark">FS</span><span>Admin</span></a></div></header>
+  <main class="shell section">
+    <form id="auth" class="hero-actions">
+      <label class="sr-only" for="token">Admin token</label>
+      <input class="control" id="token" type="password" autocomplete="off" placeholder="Admin bearer token" style="max-width:340px">
+      <button class="btn primary" type="submit">Load dashboard</button>
+      <button class="btn" type="button" data-run="/internal/ingest">Run ingestion now</button>
+      <button class="btn" type="button" data-run="/internal/notify/new?dryRun=1">Preview new-fight alerts</button>
+      <button class="btn" type="button" data-run="/internal/notify/upcoming?dryRun=1">Preview reminders</button>
+      <button class="btn" type="button" data-run="/internal/notify/new" data-confirm="Send new-fight alert emails to all active subscribers now?">Send new-fight alerts</button>
+    </form>
+    <p class="muted">The token is kept only for this browser tab (sessionStorage). Email sending also requires EMAIL_ENABLED=true on the server.</p>
+    <div id="out"></div>
+  </main>
+</body>
+</html>
