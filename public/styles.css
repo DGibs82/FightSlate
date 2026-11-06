@@ -194,3 +194,38 @@ footer .row { display: flex; justify-content: space-between; gap: 16px; flex-wra
   .countdown strong { font-size: 1.1rem; }
 }
 .count[hidden] { display: none; }
+
+/* ---------- boxing imagery ---------- */
+.hero-wrap { position: relative; isolation: isolate; overflow: hidden; border-bottom: 1px solid var(--line); }
+.hero-bg { position: absolute; inset: 0; z-index: -2; background: url(/assets/ring.svg) center bottom / cover no-repeat; opacity: .75;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,.35), #000 45%); mask-image: linear-gradient(to bottom, rgba(0,0,0,.35), #000 45%); }
+.hero-wrap::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(8,11,16,.92) 0%, rgba(8,11,16,.55) 45%, rgba(8,11,16,.2) 100%); }
+.hero-fighters { position: absolute; inset: 0; z-index: -2; pointer-events: none; }
+.hero-fighters img { position: absolute; bottom: 0; height: 92%; max-height: 640px; object-fit: contain; opacity: .5; filter: saturate(.85) contrast(1.05);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, #000 35%); mask-image: linear-gradient(to top, transparent 0%, #000 35%); }
+.hero-fighters img.square { border-radius: 50%; height: 340px; bottom: 18%; opacity: .32; mix-blend-mode: luminosity; }
+.hero-fighters img:nth-child(1) { left: 30%; }
+.hero-fighters img:nth-child(2) { left: 46%; transform: scaleX(-1); }
+.hero-fighters img:nth-child(3) { right: -2%; opacity: .28; }
+.event { position: relative; overflow: hidden; isolation: isolate; }
+.event-bg { position: absolute; z-index: -1; right: 150px; bottom: -6px; height: 135%; max-height: 250px; object-fit: contain; opacity: .22; pointer-events: none;
+  -webkit-mask-image: linear-gradient(to left, transparent 0%, #000 30%, #000 60%, transparent 100%); mask-image: linear-gradient(to left, transparent 0%, #000 30%, #000 60%, transparent 100%); }
+.event-bg.square { border-radius: 50%; height: 120px; bottom: 50%; transform: translateY(50%); opacity: .2; mix-blend-mode: luminosity; }
+.face-solo { height: 190px; display: flex; justify-content: center; align-items: flex-end; margin: 6px 0 10px; }
+.face-solo img { height: 190px; object-fit: contain; }
+.face-solo img.square { height: 150px; border-radius: 50%; }
+.faces img.square { height: 150px; border-radius: 50%; align-self: center; }
+@media (max-width: 900px) {
+  .hero-fighters img { opacity: .25; }
+  .hero-fighters img:nth-child(1) { left: 40%; } .hero-fighters img:nth-child(2) { left: 62%; } .hero-fighters img:nth-child(3) { display: none; }
+  .hero-wrap::after { background: linear-gradient(180deg, rgba(8,11,16,.75), rgba(8,11,16,.5)); }
+  .event-bg { right: 0; opacity: .14; }
+}
+@media (prefers-reduced-transparency: reduce) { .hero-fighters, .event-bg { display: none; } }
+.hero-wrap .next-up { background: linear-gradient(160deg, rgba(255,255,255,.08), rgba(255,255,255,.02)), rgba(17,23,34,.58); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); }
+.hero-fighters img:nth-child(1) { left: 31%; }
+.hero-fighters img:nth-child(2) { left: auto; right: 14%; transform: scaleX(-1); opacity: .55; }
+.hero-fighters img:nth-child(3) { right: auto; left: 62%; }
+@media (max-width: 900px) { .hero-fighters img:nth-child(1) { left: 35%; } .hero-fighters img:nth-child(2) { right: -10%; } }
+.event-bg:not(.square) { top: 0; bottom: 0; height: 100%; max-height: none; width: 240px; object-fit: cover; object-position: center 8%; }
