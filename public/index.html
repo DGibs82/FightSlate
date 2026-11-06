@@ -1,16 +1,185 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FightSlate</title><style>
-:root{--bg:#080b10;--p:#111722;--line:#ffffff19;--t:#f6f7fb;--m:#9ba6b6;--o:#ff5b35;--b:#62aaff;--g:#ffc45f}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% -5%,#ff5b3530,transparent 32rem),var(--bg);color:var(--t);font:15px Inter,system-ui,sans-serif}a{color:inherit}.shell{width:min(1180px,calc(100% - 28px));margin:auto}header{position:sticky;top:0;z-index:5;background:#080b10dd;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:950;font-size:20px}.btn{border:1px solid var(--line);background:#ffffff0d;color:var(--t);padding:11px 14px;border-radius:11px;font-weight:800;cursor:pointer}.btn.primary{background:var(--o);border:0}.hero{padding:64px 0 34px;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}.hero h1{font-size:clamp(3.3rem,8vw,7rem);line-height:.88;letter-spacing:-.075em;margin:0}.hero p,.muted{color:var(--m);line-height:1.6}.visual{min-height:360px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,#ffffff12,#ffffff03),var(--p);padding:22px;overflow:hidden}.faces{height:245px;display:flex;align-items:end;justify-content:center;position:relative}.faces img{width:50%;height:230px;object-fit:contain}.faces img:last-child{transform:scaleX(-1)}.vs{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--o);width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-weight:950}.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 8px;color:var(--m);font-size:11px;font-weight:900;text-transform:uppercase;margin-right:6px}.tag.box{background:#ff5b3520;color:#ffd9d0}.tag.mma{background:#62aaff20;color:#d6e9ff}.stats,.featured,.developing{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.stats{grid-template-columns:repeat(4,1fr);margin:20px 0 55px}.stat,.card,.mail{border:1px solid var(--line);background:#ffffff08;border-radius:17px;padding:18px}.stat strong{font-size:24px;display:block}.section{padding:18px 0 48px}.section h2{font-size:32px;letter-spacing:-.04em;margin:0 0 7px}.card{overflow:hidden}.card .face{height:190px;display:flex;align-items:end;justify-content:center;background:radial-gradient(circle at bottom,#ff5b3530,transparent 65%);position:relative;margin:-18px -18px 15px}.card.mma .face{background:radial-gradient(circle at bottom,#62aaff30,transparent 65%)}.card .face img{width:50%;height:180px;object-fit:contain}.card .face img:last-child{transform:scaleX(-1)}.filters{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:9px;margin:18px 0}.control{padding:12px;border-radius:10px;border:1px solid var(--line);background:#0004;color:var(--t)}.events{display:grid;gap:12px}.event{display:grid;grid-template-columns:100px 1fr auto;gap:18px;align-items:center;border:1px solid var(--line);background:#ffffff07;border-radius:17px;padding:17px}.date{height:86px;border:1px solid var(--line);border-radius:13px;display:grid;place-items:center;text-align:center;font-weight:900}.event h3{margin:7px 0 5px;font-size:20px}.sources a{font-size:12px;color:#b9dcff;margin-right:10px}.mail{display:grid;grid-template-columns:1fr 1.2fr;gap:20px;align-items:center;padding:26px}.mail form{display:grid;gap:10px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:8px}.checks label{border:1px solid var(--line);border-radius:10px;padding:10px;color:var(--m)}.dev{border:1px solid var(--line);background:#ffc45f0d;border-radius:17px;padding:18px}.bar{height:8px;background:#ffffff12;border-radius:20px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--o),var(--g))}dialog{border:1px solid var(--line);border-radius:20px;background:#0c1119;color:var(--t);width:min(850px,94vw);max-height:88vh}dialog::backdrop{background:#000b}.fight{padding:11px;border:1px solid var(--line);border-radius:10px;margin:8px 0}.right{display:flex;gap:8px}@media(max-width:850px){.hero,.mail{grid-template-columns:1fr}.featured,.developing{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.event{grid-template-columns:80px 1fr}.event .right{grid-column:1/-1}.filters{grid-template-columns:1fr 1fr}}@media(max-width:560px){.featured,.developing,.stats,.checks,.filters{grid-template-columns:1fr}.event{grid-template-columns:1fr}.date{height:55px;display:block;padding:16px}.hero{padding-top:38px}}
-</style></head><body><header><div class="shell"><nav><div class="brand">🥊 FightSlate</div><div><a class="btn" href="#alerts">Fight alerts</a> <button class="btn" onclick="downloadAll()">Calendar</button></div></nav></div></header><main>
-<section class="shell hero"><div><div class="tag box">Refreshed July 21, 2026</div><h1>Every fight.<br>One slate.</h1><p>Verified boxing and UFC schedules, complete cards where published, developing matchups, calendar downloads, and opt-in fight reminders.</p><a class="btn primary" href="#schedule">Browse fights</a></div><div class="visual"><div class="faces"><img src="/assets/fighters/errol-spence.jpg"><div class="vs">VS</div><img src="/assets/fighters/tim-tszyu.jpg"></div><h2>Spence vs Tszyu</h2><p class="muted">July 25 · 9:00 PM ET · Prime Video PPV, DAZN and PPV.com</p></div></section>
-<section class="shell stats"><div class="stat"><strong id="eventCount">0</strong><span class="muted">Upcoming events</span></div><div class="stat"><strong id="boutCount">0</strong><span class="muted">Published bouts</span></div><div class="stat"><strong>5</strong><span class="muted">Promotion sources</span></div><div class="stat"><strong>1 click</strong><span class="muted">Calendar download</span></div></section>
-<section class="shell section"><h2>Featured fights</h2><p class="muted">Real fighter photography on the biggest upcoming cards.</p><div class="featured" id="featured"></div></section>
-<section class="shell section" id="schedule"><h2>Verified schedule</h2><p class="muted">Start times are shown only when published. TBA means TBA, not “we took a guess and hoped.”</p><div class="filters"><input id="q" class="control" placeholder="Search fighter, venue, network"><select id="sport" class="control"><option value="">All sports</option><option>Boxing</option><option>UFC / MMA</option></select><select id="promotion" class="control"><option value="">All promotions</option></select><select id="status" class="control"><option value="">All statuses</option><option>CONFIRMED</option><option>ANNOUNCED</option></select></div><div class="events" id="events"></div></section>
-<section class="shell section" id="alerts"><div class="mail"><div><div class="tag box">Mailing list</div><h2>Never miss the bell.</h2><p>Get notified when new fights are added and when a selected fight is getting close.</p></div><form id="sub"><input class="control" type="email" name="email" required placeholder="you@example.com"><div class="checks"><label><input type="checkbox" name="boxing" checked> Boxing alerts</label><label><input type="checkbox" name="mma" checked> UFC and MMA alerts</label><label><input type="checkbox" name="newFightAlerts" checked> New fights</label><label><input type="checkbox" name="upcomingAlerts" checked> Upcoming reminders</label></div><select class="control" name="reminderHours"><option value="6">6 hours before</option><option value="12">12 hours before</option><option value="24" selected>24 hours before</option><option value="48">48 hours before</option><option value="72">72 hours before</option><option value="168">1 week before</option></select><button class="btn primary">Join fight alerts</button><div id="msg" class="muted"></div></form></div></section>
-<section class="shell section"><h2>Fights in the works</h2><p class="muted">Credible negotiations and pressure points that are not confirmed bookings.</p><div class="developing" id="developing"></div></section></main><dialog id="dlg"><button class="btn" style="float:right" onclick="dlg.close()">Close</button><div id="detail"></div></dialog><script>
-let EVENTS=[];const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const fmt=e=>e.start?new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'}).format(new Date(e.start)):`${e.date} · Time TBA`;
-async function load(){EVENTS=await fetch('/api/events').then(r=>r.json());const d=await fetch('/api/developing').then(r=>r.json());document.querySelector('#eventCount').textContent=EVENTS.length;document.querySelector('#boutCount').textContent=EVENTS.reduce((n,e)=>n+e.fights.length,0);[...new Set(EVENTS.map(e=>e.promotion))].sort().forEach(p=>promotion.add(new Option(p,p)));featured.innerHTML=EVENTS.filter(e=>e.images.length===2).slice(0,6).map(card).join('');developing.innerHTML=d.map(x=>`<article class="dev"><span class="tag box">${esc(x.status)}</span><h3>${esc(x.title)}</h3><p class="muted">${esc(x.target)} · ${esc(x.weight)}</p><strong>${x.confidence}/100 confidence</strong><div class="bar"><i style="width:${x.confidence}%"></i></div><p>${esc(x.summary)}</p></article>`).join('');render()}
-function card(e){return `<article class="card ${e.sport==='Boxing'?'':'mma'}"><div class="face"><img src="${e.images[0]}"><div class="vs">VS</div><img src="${e.images[1]}"></div><span class="tag ${e.sport==='Boxing'?'box':'mma'}">${e.sport}</span><h3>${esc(e.headline)}</h3><p class="muted">${esc(fmt(e))}<br>${esc(e.venue)} · ${esc(e.network)}</p><button class="btn" onclick="openEvent('${e.id}')">Full card</button></article>`}
-function render(){const query=q.value.toLowerCase();const rows=EVENTS.filter(e=>(!query||JSON.stringify(e).toLowerCase().includes(query))&&(!sport.value||e.sport===sport.value)&&(!promotion.value||e.promotion===promotion.value)&&(!status.value||e.status===status.value));events.innerHTML=rows.map(e=>`<article class="event"><div class="date">${esc(e.date.slice(5))}</div><div><span class="tag ${e.sport==='Boxing'?'box':'mma'}">${e.sport}</span><span class="tag">${e.status}</span><h3>${esc(e.headline)}</h3><div class="muted">${esc(fmt(e))} · ${esc(e.venue)}, ${esc(e.location)} · ${esc(e.network)}</div><div class="sources">${e.sources.map(s=>`<a target="_blank" href="${s.url}">${esc(s.label)}</a>`).join('')}</div></div><div class="right"><button class="btn primary" onclick="openEvent('${e.id}')">Full card</button><button class="btn" onclick="location='/api/calendar.ics?q=${encodeURIComponent(e.id)}'">Calendar</button></div></article>`).join('')}
-function openEvent(id){const e=EVENTS.find(x=>x.id===id);detail.innerHTML=`<h2>${esc(e.headline)}</h2><p class="muted">${esc(fmt(e))} · ${esc(e.venue)}, ${esc(e.location)}</p>${e.fights.length?e.fights.map((f,i)=>`<div class="fight"><strong>${i+1}. ${esc(f)}</strong></div>`).join(''):'<p>Full card not yet published.</p>'}`;dlg.showModal()}function downloadAll(){location='/api/calendar.ics'}[q,sport,promotion,status].forEach(x=>x.oninput=render);
-sub.onsubmit=async ev=>{ev.preventDefault();const f=new FormData(sub),body={email:f.get('email'),boxing:f.has('boxing'),mma:f.has('mma'),newFightAlerts:f.has('newFightAlerts'),upcomingAlerts:f.has('upcomingAlerts'),reminderHours:Number(f.get('reminderHours'))};const r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}),j=await r.json();msg.textContent=j.message||j.error};load();
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FightSlate · Every fight. One calendar.</title>
+  <meta name="description" content="Verified boxing and MMA schedules in one place: full fight cards, start times in your time zone, broadcasters, saved fights with change alerts, and calendar feeds.">
+  <meta name="theme-color" content="#080b10">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#schedule">Skip to schedule</a>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="/" aria-label="FightSlate home"><span class="brand-mark" aria-hidden="true">FS</span><span>FightSlate</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#schedule">Schedule</a>
+        <a href="#slate">My Slate<span class="count" id="slateCount" hidden>0</span></a>
+        <a href="#alerts" class="hide-sm">Alerts</a>
+        <a href="#sources" class="hide-sm">Sources</a>
+      </nav>
+    </div>
+    <div class="status-bar" id="statusBar" role="status"><div class="shell">Loading schedule…</div></div>
+  </header>
+
+  <main id="main">
+    <section class="shell hero" aria-labelledby="heroTitle">
+      <div>
+        <div class="eyebrow">Boxing · UFC · MMA</div>
+        <h1 id="heroTitle">Every fight.<br>One calendar.</h1>
+        <p>Upcoming boxing and MMA cards checked against official promoter pages, with start times in your time zone, verified broadcasters, and alerts when a fight you saved changes.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#schedule">Browse fights</a>
+          <a class="btn" href="#calendar-feeds" id="heroSubscribe">Subscribe in your calendar</a>
+        </div>
+      </div>
+      <aside class="next-up" id="nextUp" aria-label="Next big event" aria-live="polite"></aside>
+    </section>
+
+    <section class="shell section" id="slate" aria-labelledby="slateTitle">
+      <div class="section-head">
+        <div>
+          <h2 id="slateTitle">My Slate</h2>
+          <p class="section-sub">Saved events and fighters you follow. Stored only in this browser; no account needed.</p>
+        </div>
+      </div>
+      <div id="slateBody"></div>
+    </section>
+
+    <section class="shell section" id="schedule" aria-labelledby="scheduleTitle">
+      <div class="section-head">
+        <div>
+          <h2 id="scheduleTitle">Upcoming fights</h2>
+          <p class="section-sub">Times are shown in your time zone (<span id="userTz"></span>).</p>
+        </div>
+        <a class="btn" id="downloadVisible" href="/api/calendar.ics">Download these events (.ics)</a>
+      </div>
+      <form class="filters" id="filters" role="search" aria-label="Filter schedule">
+        <div class="segmented" role="group" aria-label="Sport">
+          <button type="button" data-sport="" aria-pressed="true">All</button>
+          <button type="button" data-sport="Boxing" aria-pressed="false">Boxing</button>
+          <button type="button" data-sport="MMA" aria-pressed="false">MMA</button>
+        </div>
+        <div class="search">
+          <label class="sr-only" for="q">Search fighter, event, venue, promotion or broadcaster</label>
+          <input class="control" id="q" type="search" placeholder="Search fighter, event, venue, broadcaster…" autocomplete="off">
+        </div>
+        <div>
+          <label class="sr-only" for="promotion">Promotion</label>
+          <select class="control" id="promotion"><option value="">All promotions</option></select>
+        </div>
+        <div>
+          <label class="sr-only" for="windowSel">Date range</label>
+          <select class="control" id="windowSel">
+            <option value="7">Next 7 days</option>
+            <option value="30">Next 30 days</option>
+            <option value="90" selected>Next 90 days</option>
+            <option value="3650">All upcoming</option>
+          </select>
+        </div>
+        <div>
+          <label class="sr-only" for="statusSel">Status</label>
+          <select class="control" id="statusSel">
+            <option value="">All statuses</option>
+            <option value="CONFIRMED">Confirmed only</option>
+            <option value="ANNOUNCED">Announced</option>
+            <option value="POSTPONED">Postponed</option>
+            <option value="CANCELED">Canceled</option>
+          </select>
+        </div>
+      </form>
+      <div class="filter-row2">
+        <label><input type="checkbox" id="officialOnly"> Official sources only</label>
+        <label><input type="checkbox" id="showPast"> Include past 30 days</label>
+        <span id="resultCount" aria-live="polite"></span>
+      </div>
+      <div id="eventList"></div>
+    </section>
+
+    <section class="shell section" id="developing-section" aria-labelledby="devTitle">
+      <div class="section-head">
+        <div>
+          <h2 id="devTitle">In the works, not confirmed</h2>
+          <p class="section-sub">Reported negotiations. These are <strong>not</strong> scheduled fights and never appear in the calendar or alerts.</p>
+        </div>
+      </div>
+      <div class="developing" id="developing"></div>
+    </section>
+
+    <section class="shell section" id="calendar-feeds" aria-labelledby="feedsTitle">
+      <div class="section-head"><div><h2 id="feedsTitle">Calendar feeds</h2><p class="section-sub">Subscribe once and your calendar updates itself when times change or bouts are canceled.</p></div></div>
+      <div class="method" id="feeds"></div>
+    </section>
+
+    <section class="shell section" id="alerts" aria-labelledby="alertsTitle">
+      <div class="panel mail">
+        <div>
+          <div class="eyebrow">Email alerts</div>
+          <h2 id="alertsTitle">Never miss the bell.</h2>
+          <p class="muted">A digest when new fights are added, plus a reminder before events start. Confirm by email; unsubscribe with one click from any message.</p>
+        </div>
+        <form id="sub" novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input class="control" id="email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+          <fieldset class="checks" style="border:0;padding:0;margin:0">
+            <legend class="sr-only">Alert preferences</legend>
+            <label><input type="checkbox" name="boxing" checked> Boxing</label>
+            <label><input type="checkbox" name="mma" checked> UFC and MMA</label>
+            <label><input type="checkbox" name="newFightAlerts" checked> New fights</label>
+            <label><input type="checkbox" name="upcomingAlerts" checked> Reminders</label>
+          </fieldset>
+          <label class="sr-only" for="reminderHours">Reminder timing</label>
+          <select class="control" id="reminderHours" name="reminderHours">
+            <option value="6">Remind me 6 hours before</option>
+            <option value="12">12 hours before</option>
+            <option value="24" selected>24 hours before</option>
+            <option value="48">48 hours before</option>
+            <option value="72">72 hours before</option>
+            <option value="168">1 week before</option>
+          </select>
+          <button class="btn primary" type="submit">Join fight alerts</button>
+          <div id="msg" class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="shell section" id="sources" aria-labelledby="sourcesTitle">
+      <div class="section-head"><div><h2 id="sourcesTitle">Sources and methodology</h2><p class="section-sub">How FightSlate decides what is on the schedule.</p></div></div>
+      <div class="method">
+        <div class="panel">
+          <h3>What "Confirmed" means</h3>
+          <ul>
+            <li><strong>Confirmed</strong>: listed on an official promoter, broadcaster or sanctioned event page.</li>
+            <li><strong>Announced</strong>: date or card reported but incomplete, or only reported by non-official outlets (marked "Unofficial source").</li>
+            <li><strong>Postponed / Canceled</strong>: kept visible with the change so saved calendars update.</li>
+            <li>Rumored matchups live only in "In the works" and never in calendars or alerts.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Times and broadcasters</h3>
+          <ul>
+            <li>Start times are the main-card time stated by the official source, converted to your time zone. "Time TBA" means no official time yet.</li>
+            <li>Broadcasters marked "unverified" were not stated by an official source.</li>
+            <li>Every event links to the pages it was checked against, with the date checked.</li>
+          </ul>
+        </div>
+        <div class="panel" id="sourceStatus"><h3>Data status</h3><p class="muted">Loading…</p></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="eventDialog" aria-labelledby="dlgTitle"><div id="eventDialogBody"></div></dialog>
+  <dialog id="fighterDialog" aria-labelledby="fighterTitle"><div id="fighterDialogBody"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer>
+    <div class="shell row">
+      <div><strong>FightSlate</strong> · Every fight. One calendar.</div>
+      <div>Schedules change. Always check the linked official source before traveling or buying.</div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,4 +1,42 @@
 [
-{"id":"haney-stevenson","title":"Devin Haney vs Shakur Stevenson","status":"VERBAL AGREEMENT REPORTED","confidence":82,"target":"October 2026 discussed","weight":"144-pound catchweight discussed","summary":"Stevenson says he verbally agreed and recent reporting says his side has advanced the proposed fight, but no final signed bout announcement is public.","sources":[{"label":"TalkSPORT, July 16","url":"https://talksport.com/boxing/4432486/shakur-stevenson-verbally-agrees-devin-haney-details/"},{"label":"TalkSPORT, July 20","url":"https://talksport.com/boxing/4443482/shakur-stevenson-zuffa-devin-haney-gervonta-davis/"}]},
-{"id":"haney-keyshawn","title":"Devin Haney vs Keyshawn Davis","status":"MANDATORY PRESSURE / BACKUP PATH","confidence":55,"target":"No confirmed date","weight":"Welterweight title path","summary":"The matchup remains commercially and sanctioning-body relevant, but it should stay outside the confirmed schedule until an official fight announcement appears.","sources":[{"label":"WBO official site","url":"https://wboboxing.com/"}]}
+ {
+  "id": "dev-haney-stevenson",
+  "sport": "Boxing",
+  "title": "Devin Haney vs Shakur Stevenson",
+  "status": "TALKS COLLAPSED",
+  "target": "Was floated for Nov 28, 2026 in Atlanta at 145 lb; never officially announced",
+  "summary": "Both sides agreed 145 lb in early October, but talks broke down on Oct 16 over the weight and a rehydration clause. Haney is now officially booked against Liam Paro on Dec 19.",
+  "sources": [
+   {
+    "label": "RG.org (Oct 10)",
+    "url": "https://rg.org/news/mma/haney-vs-stevenson-targeted-nov-28-atlanta-145-pounds",
+    "retrievedAt": "2026-11-05"
+   },
+   {
+    "label": "Sportsnaut (Oct 16)",
+    "url": "https://sportsnaut.com/boxing/haney-stevenson-fight-talks-collapse-weight-dispute",
+    "retrievedAt": "2026-11-05"
+   },
+   {
+    "label": "BoxingInsider notebook (Oct 28)",
+    "url": "https://www.boxinginsider.com/headlines/boxing-notebook-stevenson-ordered-to-face-muratalla-haney-gets-paro-lomachenko-plots-one-last-run/",
+    "retrievedAt": "2026-11-05"
+   }
+  ]
+ },
+ {
+  "id": "dev-stevenson-muratalla",
+  "sport": "Boxing",
+  "title": "Shakur Stevenson vs Raymond Muratalla",
+  "status": "SANCTIONING BODY ORDERED TALKS",
+  "target": "WBO negotiation deadline Nov 16, 2026, then purse bid; no date set",
+  "summary": "BoxingInsider reports the WBO has ordered Stevenson, now a free agent after leaving Zuffa Boxing, to negotiate with Raymond Muratalla.",
+  "sources": [
+   {
+    "label": "BoxingInsider notebook (Oct 28)",
+    "url": "https://www.boxinginsider.com/headlines/boxing-notebook-stevenson-ordered-to-face-muratalla-haney-gets-paro-lomachenko-plots-one-last-run/",
+    "retrievedAt": "2026-11-05"
+   }
+  ]
+ }
 ]
