@@ -163,7 +163,9 @@ function eventCard(e, { changes = [] } = {}) {
   const preview = live.slice(1, 4);
   const venueTime = venueTimeText(e);
   const saved = isSaved(e.id);
+  const photo = e.images?.[0];
   return `<article class="event ${off ? 'is-off' : ''} ${changes.length ? 'has-change' : ''}" aria-labelledby="t-${esc(e.id)}">
+    ${photo ? `<img class="event-bg ${isCutout(photo) ? '' : 'square'}" src="${esc(photo)}" alt="" loading="lazy" decoding="async">` : ''}
     <div class="date" aria-hidden="true"><div class="m">${esc(t.m)}</div><div class="d">${esc(t.d)}</div><div class="w">${esc(t.w)}</div></div>
     <div>
       ${badges(e, changes.length ? `<span class="badge changed">${changes.length} change${changes.length > 1 ? 's' : ''}</span>` : '')}
@@ -235,6 +237,23 @@ function renderSlate() {
   $('#slateBody').innerHTML = `<div class="slate-grid"><div>${main}</div>${side}</div>`;
 }
 
+// Transparent cutouts blend into the backdrop; square headshots get a round mask.
+const isCutout = src => /\.(png|webp)$/i.test(src) && !/(guskov|du-plessis|ankalaev)/.test(src);
+
+// Hero backdrop: photos of fighters who are actually on upcoming cards only,
+// so the page never implies someone is fighting when they aren't.
+function renderHeroFighters() {
+  const seen = new Set();
+  const photos = state.events
+    .filter(e => isUpcoming(e) && !['CANCELED', 'POSTPONED'].includes(e.status))
+    .sort((a, b) => eventSortKey(a) - eventSortKey(b))
+    .flatMap(e => e.images ?? [])
+    .filter(src => !seen.has(src) && seen.add(src))
+    .sort((a, b) => isCutout(b) - isCutout(a))
+    .slice(0, 3);
+  $('#heroFighters').innerHTML = photos.map(src => `<img src="${esc(src)}" alt="" class="${isCutout(src) ? '' : 'square'}" decoding="async">`).join('');
+}
+
 let countdownTimer;
 function renderNextUp() {
   const upcoming = state.events.filter(e => isUpcoming(e) && e.status === 'CONFIRMED' && isOfficial(e)).sort((a, b) => eventSortKey(a) - eventSortKey(b));
@@ -244,7 +263,8 @@ function renderNextUp() {
   if (!pick) { $('#nextUp').innerHTML = '<div class="next-label">Next major card</div><p class="muted">No confirmed events with official start times are on file yet.</p>'; return; }
   const main = pick.fights[0];
   $('#nextUp').innerHTML = `<div class="next-label">${pick.start ? 'Next confirmed card · main card in' : 'Next confirmed card'}</div>
-    ${pick.images?.length === 2 ? `<div class="faces" aria-hidden="true"><img src="${esc(pick.images[0])}" alt=""><div class="vs">VS</div><img src="${esc(pick.images[1])}" alt=""></div>` : ''}
+    ${pick.images?.length === 2 ? `<div class="faces" aria-hidden="true">${pick.images.map(src => `<img src="${esc(src)}" alt="" class="${isCutout(src) ? '' : 'square'}">`).join('<div class="vs">VS</div>')}</div>`
+      : pick.images?.length === 1 ? `<div class="face-solo" aria-hidden="true"><img src="${esc(pick.images[0])}" alt="" class="${isCutout(pick.images[0]) ? '' : 'square'}"></div>` : ''}
     ${pick.start ? '<div class="countdown" id="countdown" aria-hidden="true"></div>' : ''}
     ${badges(pick)}
     <div class="next-title">${esc(pick.title)}</div>
@@ -468,7 +488,7 @@ async function load() {
     Object.assign(state, { events, developing, meta });
   } catch { state.meta = null; }
   migrateLegacy();
-  renderStatus(); renderFilters(); renderNextUp(); renderDeveloping(); renderAll();
+  renderStatus(); renderFilters(); renderHeroFighters(); renderNextUp(); renderDeveloping(); renderAll();
   const params = new URLSearchParams(location.search);
   if (params.get('event')) openEvent(params.get('event'), { pushState: false });
   if (params.get('confirmed')) { const m = $('#msg'); m.className = 'form-msg ok'; m.textContent = 'You are subscribed. Alerts will arrive by email.'; toast('Subscription confirmed'); }

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" preserveAspectRatio="xMidYMax slice">
+  <!-- Original FightSlate artwork: arena spotlights over a boxing ring. -->
+  <defs>
+    <radialGradient id="spotA" cx="0.5" cy="0" r="1">
+      <stop offset="0" stop-color="#fff3e0" stop-opacity=".55"/>
+      <stop offset=".45" stop-color="#ffb08a" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#ff5b35" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6ea" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#fff6ea" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="canvas" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a3446"/>
+      <stop offset="1" stop-color="#0d121b"/>
+    </linearGradient>
+    <linearGradient id="apron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff5b35" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#7a2414" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="rope" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#9aa6b8" stop-opacity=".7"/>
+    </linearGradient>
+    <linearGradient id="ropeRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8a6a"/>
+      <stop offset="1" stop-color="#c23a1f"/>
+    </linearGradient>
+    <linearGradient id="post" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5d6878"/>
+      <stop offset=".5" stop-color="#c9d1dc"/>
+      <stop offset="1" stop-color="#4a5260"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+
+  <!-- light beams -->
+  <polygon points="380,0 460,0 760,640 160,640" fill="url(#beam)"/>
+  <polygon points="1140,0 1220,0 1440,640 840,640" fill="url(#beam)"/>
+  <polygon points="770,0 830,0 1060,640 540,640" fill="url(#beam)" opacity=".7"/>
+  <ellipse cx="420" cy="0" rx="260" ry="120" fill="url(#spotA)"/>
+  <ellipse cx="1180" cy="0" rx="260" ry="120" fill="url(#spotA)"/>
+  <ellipse cx="800" cy="0" rx="200" ry="90" fill="url(#spotA)"/>
+
+  <!-- far ropes (back side of the ring) -->
+  <g stroke-linecap="round" fill="none" opacity=".35">
+    <path d="M360 452 Q800 462 1240 452" stroke="url(#rope)" stroke-width="4"/>
+    <path d="M360 480 Q800 490 1240 480" stroke="url(#rope)" stroke-width="4"/>
+    <path d="M360 508 Q800 518 1240 508" stroke="url(#ropeRed)" stroke-width="4"/>
+  </g>
+  <rect x="352" y="436" width="14" height="110" rx="5" fill="url(#post)" opacity=".5"/>
+  <rect x="1234" y="436" width="14" height="110" rx="5" fill="url(#post)" opacity=".5"/>
+
+  <!-- canvas and pool of light -->
+  <polygon points="360,546 1240,546 1560,700 40,700" fill="url(#canvas)"/>
+  <ellipse cx="800" cy="610" rx="420" ry="60" fill="#ffe2c8" opacity=".10" filter="url(#blur)"/>
+  <polygon points="40,700 1560,700 1560,760 40,760" fill="url(#apron)"/>
+  <text x="800" y="742" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size="34" letter-spacing="18" fill="#ffffff" opacity=".18">FIGHTSLATE</text>
+
+  <!-- side ropes in perspective -->
+  <g stroke-linecap="round" fill="none" opacity=".55">
+    <path d="M360 452 L52 560" stroke="url(#rope)" stroke-width="5"/>
+    <path d="M360 480 L52 600" stroke="url(#rope)" stroke-width="5"/>
+    <path d="M360 508 L52 640" stroke="url(#ropeRed)" stroke-width="5"/>
+    <path d="M1240 452 L1548 560" stroke="url(#rope)" stroke-width="5"/>
+    <path d="M1240 480 L1548 600" stroke="url(#rope)" stroke-width="5"/>
+    <path d="M1240 508 L1548 640" stroke="url(#ropeRed)" stroke-width="5"/>
+  </g>
+
+  <!-- near ropes -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M40 560 Q800 590 1560 560" stroke="url(#rope)" stroke-width="9" opacity=".75"/>
+    <path d="M40 600 Q800 632 1560 600" stroke="url(#rope)" stroke-width="9" opacity=".75"/>
+    <path d="M40 640 Q800 674 1560 640" stroke="url(#ropeRed)" stroke-width="9" opacity=".85"/>
+  </g>
+
+  <!-- corner posts with turnbuckle pads (red and blue corners) -->
+  <rect x="26" y="520" width="26" height="200" rx="8" fill="url(#post)"/>
+  <rect x="20" y="548" width="38" height="104" rx="10" fill="#c23a1f" opacity=".9"/>
+  <rect x="1548" y="520" width="26" height="200" rx="8" fill="url(#post)"/>
+  <rect x="1542" y="548" width="38" height="104" rx="10" fill="#2f6fd6" opacity=".9"/>
+</svg>
